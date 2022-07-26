@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 1.2rem 4rem;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .links:hover {
-  color: orange;
+  color: #ff7736;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
