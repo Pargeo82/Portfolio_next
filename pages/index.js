@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <h1>bb</h1>
+      <h1>I'm Pargeo</h1>
     </>
   );
 }
