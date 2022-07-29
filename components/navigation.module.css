@@ -16,3 +16,11 @@
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
+
+.active {
+  color: #ff7736;
+}
+
+.nonActive {
+  color: white;
+}
