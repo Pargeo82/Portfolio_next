@@ -1,4 +1,6 @@
 import Navigation from "../components/navigation";
+import EmailButton from "../components/email_button";
+import DownloadButton from "../components/download_button";
 import Image from "next/image";
 
 export default function Home() {
@@ -53,6 +55,10 @@ export default function Home() {
                 height={30}
               />
             </a>
+          </div>
+          <div className="flex">
+            <EmailButton />
+            <DownloadButton />
           </div>
         </div>
         <div className="right">

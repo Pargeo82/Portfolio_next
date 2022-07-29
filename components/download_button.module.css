@@ -1,0 +1,24 @@
+.button {
+  background-color: #1c1c1c;
+  width: 125px;
+  height: 55px;
+  padding: 10px 15px;
+  border: 1.5px solid #ff5403;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 #ff5403;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 50px 0 0;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.resume {
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
