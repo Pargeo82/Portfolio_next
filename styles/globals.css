@@ -4,7 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #1c1c1c;
+  background-color: var(--background);
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: 400;
@@ -17,13 +17,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  margin: auto;
-  width: 65vw;
-  position: relative;
 }
 
 .left,
@@ -39,20 +32,7 @@ a {
 
 #Mislav,
 #Parg {
-  color: #ff7736;
-}
-
-h1,
-h2 {
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
+  color: var(--main-color);
 }
 
 #follow {
