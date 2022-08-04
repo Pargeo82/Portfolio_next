@@ -1,8 +1,11 @@
 .container {
-  display: flex;
   margin: auto;
   width: 65vw;
   position: relative;
+}
+
+.flex {
+  display: flex;
 }
 
 .h1-title {

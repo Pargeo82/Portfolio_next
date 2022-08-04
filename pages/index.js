@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <div className="container">
+      <div className="container flex">
         <div className="left">
           <h1 className="h1-title">
             Hi, I'm <span id="Mislav">Mislav Markušić</span>
