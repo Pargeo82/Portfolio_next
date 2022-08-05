@@ -1,5 +1,5 @@
 import Navigation from "../components/navigation";
-import Projects from "../components/Projects/projects";
+import Projects from "../components/Projects/projects.js";
 import projectData from "../components/Projects/project_data";
 
 export default function ProjectsPage() {

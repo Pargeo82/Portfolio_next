@@ -2,8 +2,9 @@
   margin-right: 2rem;
 }
 
-.projectImage img {
-  border-radius: 1rem;
+.projectImage {
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
 }
 
 .ul {
