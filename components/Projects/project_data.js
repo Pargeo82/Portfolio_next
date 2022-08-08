@@ -4,7 +4,7 @@ const projectData = [
     image: "Project1.jpg",
     name: "Student calendar",
     description: "bla bla 1",
-    technology: ["html", "css", "javascript"],
+    technology: ["html", "css", "js"],
   },
   {
     id: 2,

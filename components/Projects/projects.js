@@ -13,8 +13,14 @@ export default function Projects(props) {
           height={300}
         />
         <li>{props.name}</li>
+        <li className="techno">
+          {props.technology.map((techno, index) => {
+            return (
+              <Image key={index} src={`/${techno}.png`} alt={`${techno}`} width={25} height={25} />
+            );
+          })}
+        </li>
         <li>{props.description}</li>
-        <li>{props.technology.join(" ")}</li>
       </ul>
     </div>
   );
