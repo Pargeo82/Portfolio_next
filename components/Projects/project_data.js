@@ -1,3 +1,5 @@
+// technologies must be in format: html css js nextjs react
+
 const projectData = [
   {
     id: 1,

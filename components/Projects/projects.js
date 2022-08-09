@@ -6,13 +6,13 @@ export default function Projects(props) {
     <div className={styles.card}>
       <ul className={styles.ul}>
         <Image
-          className="project-image"
+          className={styles.projectImage}
           src={`/${props.image}`}
           alt="{props.name}"
-          width={600}
-          height={300}
+          width={300}
+          height={150}
         />
-        <li>{props.name}</li>
+        <li className={styles.title}>{props.name}</li>
         <li className="techno">
           {props.technology.map((techno, index) => {
             return (
