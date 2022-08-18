@@ -2,6 +2,8 @@ import Navigation from "../components/navigation";
 import EmailButton from "../components/email_button";
 import DownloadButton from "../components/download_button";
 import Image from "next/image";
+import Skills from "../components/skills";
+import TypewriterEff from "../components/typewriter";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
           <h2 className="h2-title">
             also known as <span id="Parg">Pargeo</span>
           </h2>
+          <TypewriterEff />
           <div id="follow">
             <p>Find me on</p>
             <a href="https://www.linkedin.com/in/mislav-markusic/" target="_blank" rel="noreferrer">
@@ -42,6 +45,7 @@ export default function Home() {
         <div className="right">
           <Image src="/Pargeo.jpg" alt="me" width={375} height={518} />
         </div>
+        <Skills />
       </div>
     </>
   );

@@ -1,0 +1,18 @@
+.card {
+  margin-right: 2rem;
+}
+
+.skillsImage {
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.35rem;
+}
