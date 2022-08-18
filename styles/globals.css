@@ -47,3 +47,7 @@ a {
   justify-content: space-evenly;
   margin-bottom: 4rem;
 }
+
+.main-color {
+  color: var(--main-color);
+}

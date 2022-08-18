@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <>
+    <div className="margin-top center">
       <h1 className="h1-title">Why hire me?</h1>
       <div className="flex">
         <div className={styles.card}>
@@ -59,6 +59,6 @@ export default function Skills() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
