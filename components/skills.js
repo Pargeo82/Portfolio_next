@@ -15,8 +15,11 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={styles.title}>Efficiency</li>
-            <li>something about</li>
+            <li className={[styles.title, "main-color"].join(" ")}>Efficiency</li>
+            <li>
+              I live by this. Use the least amount of time, energy and complications to reach a goal
+              (not at the expense of quality though)
+            </li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -28,8 +31,8 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={styles.title}>Goal oriented</li>
-            <li>something about</li>
+            <li className={[styles.title, "main-color"].join(" ")}>Goal oriented</li>
+            <li>I always try to set smaller goals in order to reach the greater one</li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -41,8 +44,8 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={styles.title}>Problem solving</li>
-            <li>something about</li>
+            <li className={[styles.title, "main-color"].join(" ")}>Problem solving</li>
+            <li>When you divide bigger problems, smaller ones don't seem as big</li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -54,8 +57,10 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={styles.title}>Teamwork</li>
-            <li>something about</li>
+            <li className={[styles.title, "main-color"].join(" ")}>Teamwork</li>
+            <li>
+              You can't grow without a team, everything is better and faster, and more fun in one
+            </li>
           </ul>
         </div>
       </div>

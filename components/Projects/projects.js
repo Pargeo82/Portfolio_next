@@ -12,7 +12,7 @@ export default function Projects(props) {
           width={300}
           height={150}
         />
-        <li className={styles.title}>{props.name}</li>
+        <li className={[styles.title, "main-color"].join(" ")}>{props.name}</li>
         <li className="techno">
           {props.technology.map((techno, index) => {
             return (

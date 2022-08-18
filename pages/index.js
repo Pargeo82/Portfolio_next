@@ -10,7 +10,9 @@ export default function Homepage() {
       <div className="container flex">
         <Home />
         <Skills />
-        <GitHubCalendar username="pargeo82" weekStart={1} />
+        <div className="margin-top">
+          <GitHubCalendar username="pargeo82" weekStart={1} />
+        </div>
       </div>
     </>
   );

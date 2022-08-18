@@ -12,7 +12,7 @@ export default function Hobbies(props) {
           width={400}
           height={300}
         />
-        <li className={styles.title}>{props.name}</li>
+        <li className={[styles.title, "main-color"].join(" ")}>{props.name}</li>
         <li>{props.description}</li>
       </ul>
     </div>

@@ -21,7 +21,7 @@ a {
 
 .left,
 .right {
-  width: 50%;
+  width: calc(50% - 2rem);
   max-height: 500px;
 }
 
@@ -46,6 +46,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 4rem;
+  gap: 2rem;
 }
 
 .main-color {

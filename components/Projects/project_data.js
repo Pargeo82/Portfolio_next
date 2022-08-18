@@ -5,21 +5,23 @@ const projectData = [
     id: 1,
     image: "Project1.jpg",
     name: "Student calendar",
-    description: "bla bla 1",
+    description:
+      "Admins assign working slots to which students apply. Admins then decide which student goes to which time slot",
     technology: ["html", "css", "js"],
   },
   {
     id: 2,
     image: "Blog.jpg",
     name: "Blog",
-    description: "bla bla 2",
+    description: "Blogging about learning and problems I encounter",
     technology: [],
   },
   {
     id: 3,
     image: "Portfolio.jpg",
     name: "Portofolio site",
-    description: "bla bla 3",
+    description:
+      "This project. I know it can be done in vanilla JS, but working in nextJS is a great practice",
     technology: ["nextjs", "html", "css"],
   },
 ];

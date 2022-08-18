@@ -1,11 +1,10 @@
 .card {
   margin-top: 2rem;
-  justify-content: center;
+  width: calc(50% - 2rem);
 }
 
-.projectImage {
+.hobbiesImage {
   border-radius: 0.5rem 0.5rem 0 0;
-  overflow: hidden;
 }
 
 .ul {
