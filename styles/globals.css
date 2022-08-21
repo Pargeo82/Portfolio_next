@@ -8,6 +8,13 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: 400;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
