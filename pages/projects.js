@@ -12,6 +12,7 @@ export default function ProjectsPage() {
         name={project.name}
         description={project.description}
         technology={project.technology}
+        link={project.link}
       />
     );
   });

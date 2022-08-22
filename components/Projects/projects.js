@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./projects.module.css";
 
 export default function Projects(props) {
+  const isLink = props.link;
   return (
     <div className={styles.card}>
       <ul className={styles.ul}>
@@ -13,14 +14,25 @@ export default function Projects(props) {
           height={150}
         />
         <li className={[styles.title, "main-color"].join(" ")}>{props.name}</li>
-        <li className="techno">
-          {props.technology.map((techno, index) => {
-            return (
-              <Image key={index} src={`/${techno}.png`} alt={`${techno}`} width={25} height={25} />
-            );
-          })}
+        <li>
+          <div className="flex-start">
+            {props.technology.map((techno, index) => {
+              return (
+                <div className={styles.techno} key={index}>
+                  <Image src={`/${techno}.png`} alt={`${techno}`} width={25} height={25} />
+                </div>
+              );
+            })}
+          </div>
         </li>
         <li>{props.description}</li>
+        <li className={styles.links}>
+          {isLink && (
+            <a href={isLink} target="_blank" rel="noreferrer">
+              Link
+            </a>
+          )}
+        </li>
       </ul>
     </div>
   );

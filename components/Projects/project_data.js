@@ -8,6 +8,7 @@ const projectData = [
     description:
       "Admins assign working slots to which students apply. Admins then decide which student goes to which time slot",
     technology: ["html", "css", "js"],
+    link: "https://github.com/Pargeo82/cedeterijaStudenti",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projectData = [
     name: "Blog",
     description: "Blogging about learning and problems I encounter",
     technology: [],
+    link: "https://pargeo.hashnode.dev/",
   },
   {
     id: 3,

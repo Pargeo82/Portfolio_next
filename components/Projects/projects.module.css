@@ -16,3 +16,12 @@
 .title {
   font-size: 1.35rem;
 }
+
+.techno span span img {
+  background-color: blueviolet;
+}
+
+.links {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}

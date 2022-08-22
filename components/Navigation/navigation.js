@@ -27,13 +27,6 @@ export default function Navigation() {
           </a>
         </Link>
       </h2>
-      <h2 className={styles.links}>
-        <Link href="/contact">
-          <a className={currentRoute === "/contact" ? `${styles.active}` : `${styles.nonActive}`}>
-            Contact
-          </a>
-        </Link>
-      </h2>
     </nav>
   );
 }

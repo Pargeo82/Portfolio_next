@@ -2,6 +2,7 @@ import EmailButton from "../email_button";
 import DownloadButton from "../download_button";
 import Image from "next/image";
 import TypewriterEff from "./typewriter";
+import styles from "./home.module.css";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
             <Image src="/icons8-github.svg" alt="github" width={30} height={30} />
           </a>
         </div>
-        <div className="flex">
+        <div className={[styles.buttons, "flex"].join(" ")}>
           <EmailButton />
           <DownloadButton />
         </div>
