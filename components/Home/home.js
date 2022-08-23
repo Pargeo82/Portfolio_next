@@ -6,7 +6,7 @@ import styles from "./home.module.css";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex">
       <div className="left">
         <h1 className="h1-title">
           Hi, I'm <span id="Mislav">Mislav Markušić</span>
@@ -42,6 +42,6 @@ export default function Home() {
       <div className="right">
         <Image src="/Pargeo.jpg" alt="me" width={375} height={518} />
       </div>
-    </>
+    </div>
   );
 }
