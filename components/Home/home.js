@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex">
       <div className="left">
         <h1 className="h1-title">
-          Hi, I'm <span id="Mislav">Mislav Markušić</span>
+          Hi, I&apos;m <span id="Mislav">Mislav Markušić</span>
         </h1>
         <h2 className="h2-title">
           also known as <span id="Parg">Pargeo</span>

@@ -45,7 +45,7 @@ export default function Skills() {
               height={200}
             />
             <li className={[styles.title, "main-color"].join(" ")}>Problem solving</li>
-            <li>When you divide bigger problems, smaller ones don't seem as big</li>
+            <li>When you divide bigger problems, smaller ones don&apos;t seem as big</li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -59,7 +59,8 @@ export default function Skills() {
             />
             <li className={[styles.title, "main-color"].join(" ")}>Teamwork</li>
             <li>
-              You can't grow without a team, everything is better and faster, and more fun in one
+              You can&apos;t grow without a team, everything is better and faster, and more fun in
+              one
             </li>
           </ul>
         </div>
