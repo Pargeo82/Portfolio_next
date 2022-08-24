@@ -1,5 +1,5 @@
 import Footer from "../components/Footer/Footer";
-import Navigation from "../components/navigation/navigation";
+import Navigation from "../components/Navigation/navigation";
 import Projects from "../components/Projects/projects.js";
 import projectData from "../components/Projects/project_data";
 

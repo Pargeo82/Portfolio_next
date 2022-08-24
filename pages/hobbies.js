@@ -1,4 +1,4 @@
-import Navigation from "../components/navigation/navigation";
+import Navigation from "../components/Navigation/navigation";
 import Hobbies from "../components/Hobbies/hobbies";
 import hobbiesData from "../components/Hobbies/hobbies_data";
 import Footer from "../components/Footer/Footer";
