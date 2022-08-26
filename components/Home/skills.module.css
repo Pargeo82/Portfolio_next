@@ -16,3 +16,9 @@
 .title {
   font-size: 1.35rem;
 }
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: calc(50% - 2rem);
+  }
+}

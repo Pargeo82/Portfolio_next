@@ -10,7 +10,7 @@ export default function TypewriterEff() {
       <h2 className="h2-title main-color">
         <Typewriter
           options={{
-            strings: ["full-stack developer"],
+            strings: ["junior developer"],
             autoStart: true,
             loop: true,
           }}

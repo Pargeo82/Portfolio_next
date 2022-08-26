@@ -59,3 +59,29 @@ a {
 .main-color {
   color: var(--main-color);
 }
+
+@media screen and (max-width: 767px) {
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #follow {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .media-flex {
+    min-width: calc(33% - 2rem);
+    margin-bottom: 0;
+  }
+}

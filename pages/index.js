@@ -18,7 +18,7 @@ export default function Homepage() {
         <Skills />
         <h1 className="h1-title center">Technologies</h1>
         <div className="flex">{technoElement}</div>
-        <div className="margin-top">
+        <div className="margin-top flex">
           <GitHubCalendar username="pargeo82" weekStart={1} />
         </div>
       </div>

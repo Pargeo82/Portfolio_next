@@ -1,3 +1,9 @@
 .buttons {
   justify-content: flex-start;
 }
+
+@media screen and (max-width: 767px) {
+  .buttons {
+    justify-content: center;
+  }
+}
