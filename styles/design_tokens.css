@@ -2,3 +2,9 @@
   --main-color: #ff7736;
   --background: #1c1c1c;
 }
+
+@media screen and (max-width: 412px) {
+  :root {
+    font-size: 12px;
+  }
+}

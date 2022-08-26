@@ -24,7 +24,7 @@ const projectData = [
     name: "Portofolio site",
     description:
       "This project. I know it can be done in vanilla JS, but working in nextJS is a great practice",
-    technology: ["Nextjs", "HTML", "CSS"],
+    technology: ["NextJS", "HTML", "CSS"],
   },
 ];
 
