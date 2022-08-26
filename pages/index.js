@@ -5,6 +5,7 @@ import GitHubCalendar from "react-github-calendar";
 import Footer from "../components/Footer/Footer";
 import TechnoUse from "../components/Home/TechnoUse";
 import TechnoUseData from "../components/Home/TechnoUse_data";
+import styles from "../components/Home/home.module.css";
 
 export default function Homepage() {
   const technoElement = TechnoUseData.map((technology, index) => {
@@ -18,11 +19,14 @@ export default function Homepage() {
         <Skills />
         <h1 className="h1-title center">Technologies</h1>
         <div className="flex">{technoElement}</div>
-        <div className="margin-top flex">
+        <div className={`margin-top flex ${styles.git}`}>
           <GitHubCalendar username="pargeo82" weekStart={1} />
         </div>
       </div>
       <Footer />
     </div>
   );
+}
+{
+  /* <div className="margin-top flex"></div> */
 }

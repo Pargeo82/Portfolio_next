@@ -17,11 +17,35 @@
   font-size: 1.35rem;
 }
 
-.techno span span img {
-  background-color: blueviolet;
+.techno {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .links {
   margin-top: 0.5rem;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techno {
+    justify-content: center;
+  }
 }

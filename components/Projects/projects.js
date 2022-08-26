@@ -15,7 +15,7 @@ export default function Projects(props) {
         />
         <li className={[styles.title, "main-color"].join(" ")}>{props.name}</li>
         <li>
-          <div className="flex-start">
+          <div className={styles.techno}>
             {props.technology.map((techno, index) => {
               return (
                 <div className={styles.techno} key={index}>

@@ -1,9 +1,50 @@
+.left {
+  width: calc(60% - 2rem);
+}
+
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
 .buttons {
   justify-content: flex-start;
+}
+
+.mediaFlex {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
   .buttons {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .git {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mediaFlex {
+    min-width: calc(33% - 2rem);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right {
+    display: none;
   }
 }

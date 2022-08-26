@@ -6,6 +6,9 @@ const technoData = [
     name: "CSS",
   },
   {
+    name: "Javascript",
+  },
+  {
     name: "React",
   },
   {
