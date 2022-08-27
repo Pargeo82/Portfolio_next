@@ -8,8 +8,11 @@ export default function NavigationMobile() {
 
   return (
     <nav className={styles.navMobile}>
+      <div className={styles.minime}>
+        <Image src="/minime.jpg" alt="Small me" width={40} height={40} layout="fixed" />
+      </div>
       <div className={styles.hamburger} onClick={() => setShowNav(!showNav)}>
-        <Image src="/hamburger.png" alt="Menu" width={50} height={50} layout="fixed" />
+        <Image src="/hamburger.png" alt="Menu" width={40} height={40} layout="fixed" />
       </div>
       {showNav && <Navlinks />}
     </nav>

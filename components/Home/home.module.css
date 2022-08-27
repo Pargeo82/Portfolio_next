@@ -8,6 +8,17 @@
   justify-content: center;
 }
 
+.follow {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+}
+
+.follow div {
+  margin: 0;
+}
+
 .buttons {
   justify-content: flex-start;
 }
@@ -22,18 +33,27 @@
   .buttons {
     justify-content: center;
   }
-}
 
-@media screen and (max-width: 767px) {
   .git {
     width: 90%;
     margin: auto;
   }
-}
 
-@media screen and (max-width: 767px) {
   .mediaFlex {
     width: 25%;
+  }
+
+  .follow {
+    justify-content: center;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    display: none;
   }
 }
 
@@ -41,18 +61,5 @@
   .mediaFlex {
     display: block;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .left {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .right {
-    display: none;
   }
 }

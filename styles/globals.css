@@ -31,12 +31,6 @@ a {
   color: var(--main-color);
 }
 
-#follow {
-  display: flex;
-  align-items: center;
-  margin-top: 4rem;
-}
-
 .flex {
   display: flex;
   flex-wrap: wrap;

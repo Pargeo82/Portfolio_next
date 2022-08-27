@@ -33,9 +33,20 @@
   position: absolute;
   right: 5%;
   top: 3%;
+  z-index: 1;
 }
 
-@media screen and (max-width: 600px) {
+.minime {
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
