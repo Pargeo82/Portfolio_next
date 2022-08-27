@@ -1,10 +1,10 @@
-.nav {
+.menu {
   display: flex;
   justify-content: flex-end;
   padding: 1.2rem 4rem;
 }
 
-.nav > h2 {
+.menu > h2 {
   color: white;
   font-size: 1.1rem;
   font-weight: 700;
@@ -23,4 +23,45 @@
 
 .nonActive {
   color: white;
+}
+
+.navMobile {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .navBar {
+    height: calc(3vh + 50px);
+  }
+
+  .navMobile {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(4vh + 50px);
+    width: 100%;
+    background-color: var(--background);
+    z-index: 1;
+    text-align: center;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  .links {
+    margin: 2rem 0;
+  }
 }

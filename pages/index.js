@@ -1,4 +1,4 @@
-import Navigation from "../components/Navigation/navigation";
+import Navbar from "../components/Navigation/Navbar";
 import Home from "../components/Home/home";
 import Skills from "../components/Home/skills";
 import GitHubCalendar from "react-github-calendar";
@@ -13,7 +13,7 @@ export default function Homepage() {
   });
   return (
     <div className="content">
-      <Navigation />
+      <Navbar />
       <div className="container">
         <Home />
         <Skills />

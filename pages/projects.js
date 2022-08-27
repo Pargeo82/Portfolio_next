@@ -1,5 +1,5 @@
 import Footer from "../components/Footer/Footer";
-import Navigation from "../components/Navigation/navigation";
+import Navbar from "../components/Navigation/Navbar";
 import Projects from "../components/Projects/projects.js";
 import projectData from "../components/Projects/project_data";
 
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   });
   return (
     <div className="content">
-      <Navigation />
+      <Navbar />
       <div className="container">
         <h1 className="h1-title">Projects</h1>
         <div className="flex">{projectElements}</div>
