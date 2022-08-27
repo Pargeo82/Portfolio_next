@@ -11,7 +11,7 @@ export default function Hobbies(props) {
           alt="{props.name}"
           width={400}
           height={300}
-          layout="fixed"
+          layout="responsive"
         />
         <li className={[styles.title, "main-color"].join(" ")}>{props.name}</li>
         <li>{props.description}</li>

@@ -2,6 +2,7 @@ import Navbar from "../components/Navigation/Navbar";
 import Hobbies from "../components/Hobbies/hobbies";
 import hobbiesData from "../components/Hobbies/hobbies_data";
 import Footer from "../components/Footer/Footer";
+import styles from "../components/Hobbies/hobbies.module.css";
 
 export default function HobbiesPage() {
   const hobbiesElements = hobbiesData.map((hobby) => {
@@ -18,7 +19,7 @@ export default function HobbiesPage() {
     <div className="content">
       <Navbar />
       <div className="container">
-        <h1 className="h1-title">Hobbies</h1>
+        <h1 className={`h1-title, ${styles.main}`}>Hobbies</h1>
         <div className="flex">{hobbiesElements}</div>
       </div>
       <Footer />

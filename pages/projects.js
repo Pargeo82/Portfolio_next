@@ -2,6 +2,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navigation/Navbar";
 import Projects from "../components/Projects/projects.js";
 import projectData from "../components/Projects/project_data";
+import styles from "../components/Projects/projects.module.css";
 
 export default function ProjectsPage() {
   const projectElements = projectData.map((project) => {
@@ -20,7 +21,7 @@ export default function ProjectsPage() {
     <div className="content">
       <Navbar />
       <div className="container">
-        <h1 className="h1-title">Projects</h1>
+        <h1 className={`h1-title ${styles.main}`}>Projects</h1>
         <div className="flex">{projectElements}</div>
       </div>
       <Footer />

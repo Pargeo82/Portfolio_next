@@ -31,9 +31,20 @@
   gap: 1rem;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1210px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
   .container {
     width: 85vw;
+  }
+}
+@media screen and (max-width: 920px) {
+  .container {
+    width: 95vw;
   }
 }
 
