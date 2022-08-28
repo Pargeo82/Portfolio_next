@@ -9,6 +9,7 @@ const projectData = [
       "Admins assign working slots to which students apply. Admins then decide which student goes to which time slot",
     technology: ["HTML", "CSS", "Javascript"],
     link: "https://github.com/Pargeo82/cedeterijaStudenti",
+    linkText: "Github link",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const projectData = [
     description: "Blogging about learning and problems I encounter",
     technology: [],
     link: "https://pargeo.hashnode.dev/",
+    linkText: "Link",
   },
   {
     id: 3,
@@ -25,6 +27,8 @@ const projectData = [
     description:
       "This project. I know it can be done in vanilla JS, but working in nextJS is a great practice",
     technology: ["NextJS", "CSS"],
+    link: "https://github.com/Pargeo82/Portfolio_next",
+    linkText: "Github link",
   },
 ];
 

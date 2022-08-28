@@ -29,7 +29,7 @@ export default function Projects(props) {
         <li className={styles.links}>
           {isLink && (
             <a href={isLink} target="_blank" rel="noreferrer">
-              Link
+              {props.linkText}
             </a>
           )}
         </li>

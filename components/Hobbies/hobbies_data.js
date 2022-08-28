@@ -8,13 +8,13 @@ const hobbiesData = [
   },
   {
     id: 2,
-    image: "food1.jpg",
+    image: "food1.png",
     name: "Sourdough pastries",
     description: "My sourdough starter's name is Đurđica",
   },
   {
     id: 3,
-    image: "food3.jpg",
+    image: "food3.png",
     name: "Preparations for making cherry jam",
     description: "Kids help with cherry picking...",
   },

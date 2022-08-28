@@ -14,6 +14,7 @@ export default function ProjectsPage() {
         description={project.description}
         technology={project.technology}
         link={project.link}
+        linkText={project.linkText}
       />
     );
   });
