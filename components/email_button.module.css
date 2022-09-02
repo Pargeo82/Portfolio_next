@@ -1,12 +1,13 @@
 .button {
-  background-color: var(--main-color);
+  background-color: #d27b4b;
   width: 125px;
   height: 55px;
   padding: 10px 15px;
-  border: 1.5px solid #ff5403;
+  border: 1.5px solid #fa5700;
   border-radius: 10px;
-  box-shadow: 0 2px 8px 0 #ff5403;
+  box-shadow: 0 2px 8px 0 #fa5700;
   color: white;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,12 +21,11 @@
 
 .email {
   margin-left: 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 767px) {
   .button {
-    width: 100px;
     margin: 20px 0 0 0;
   }
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <div className="margin-top center">
-      <h1 className="h1-title">Why hire me?</h1>
+      <h2 className="h1-title">Why hire me?</h2>
       <div className="flex">
         <div className={styles.card}>
           <ul className={styles.ul}>
@@ -18,7 +18,7 @@ export default function Skills() {
             <li className={[styles.title, "main-color"].join(" ")}>Efficiency</li>
             <li>
               I live by this. Use the least amount of time, energy and complications to reach a goal
-              (not at the expense of quality though)
+              (not at the expense of quality, though)
             </li>
           </ul>
         </div>

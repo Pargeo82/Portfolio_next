@@ -17,7 +17,7 @@ export default function Homepage() {
       <div className="container">
         <Home />
         <Skills />
-        <h1 className="h1-title center">Technologies</h1>
+        <h2 className="h1-title center">Technologies</h2>
         <div className="flex">{technoElement}</div>
         <div className={`margin-top flex ${styles.git}`}>
           <GitHubCalendar username="pargeo82" weekStart={1} />
