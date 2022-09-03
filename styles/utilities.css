@@ -31,6 +31,12 @@
   gap: 1rem;
 }
 
+@media screen and (max-width: 3900px) {
+  .container {
+    width: 60vw;
+  }
+}
+
 @media screen and (max-width: 1210px) {
   .container {
     width: 75vw;

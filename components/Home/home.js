@@ -44,7 +44,8 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.right}>
-        <Image src="/Pargeo2.png" alt="me" width={375} height={518} layout="fixed" />
+        {/* <Image src="/Pargeo2.png" alt="me" width={375} height={518} layout="fixed" /> */}
+        <Image src="/Pargeo2.png" alt="me" width={750} height={931} layout="responsive" />
       </div>
     </div>
   );
