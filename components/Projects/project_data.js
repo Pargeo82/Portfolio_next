@@ -23,8 +23,7 @@ const projectData = [
     id: 3,
     image: "Portfolio.jpg",
     name: "Portofolio site",
-    description:
-      "This project. I know it can be done in vanilla JS, but working in nextJS is a great practice",
+    description: "This site done in NextJS after a couple of iterations in other tech",
     technology: ["NextJS", "CSS"],
     link: "https://github.com/Pargeo82/Portfolio_next",
     linkText: "Github link",
