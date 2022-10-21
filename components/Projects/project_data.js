@@ -16,8 +16,8 @@ const projectData = [
     name: "Bar online menu",
     description: "Mobile-first online menu for a bar",
     technology: ["NextJS", "CSS", "MongoDB"],
-    link: "https://github.com/Pargeo82/musicbrainz",
-    linkText: "Github link",
+    link: "https://www.caffebargt-martinko.hr/",
+    linkText: "Link",
   },
   {
     id: 3,
