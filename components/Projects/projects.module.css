@@ -2,6 +2,10 @@
   width: calc(33% - 2rem);
 }
 
+.card :hover {
+  cursor: pointer;
+}
+
 .projectImage {
   border-radius: 0.5rem 0.5rem 0 0;
   overflow: hidden;
@@ -29,6 +33,10 @@
   text-decoration: underline;
 }
 
+.description {
+  text-align: justify;
+}
+
 @media screen and (max-width: 767px) {
   .left {
     width: 100%;
@@ -53,5 +61,28 @@
 @media screen and (max-width: 767px) {
   .card {
     width: 100%;
+  }
+}
+
+.imageHolder {
+  display: block;
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .imageHolder {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projectContainer {
+    width: 80%;
+    text-align: justify;
   }
 }
