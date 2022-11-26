@@ -5,7 +5,7 @@ export default function DownloadButton() {
   return (
     <a
       className={styles.button}
-      href="./Resume_Mislav_Markusic.pdf"
+      href="./Mislav_Markusic_CV.pdf"
       download
       target="_blank"
       rel="noreferrer"
