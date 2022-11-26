@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       <div className="container">
         <h1 className={`h1-title ${styles.main}`}>Projects</h1>
         <div className="flex">{projectElements}</div>
-        <div className={styles.card}>
+        <div className={`${styles.card} flex`}>
           <a href="https://pargeo.hashnode.dev/" target="_blank" rel="noreferrer noopener">
             <ul className={styles.ul}>
               <Image
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
                 width={300}
                 height={150}
               />
-              <li className={[styles.title, "main-color"].join(" ")}>Blog</li>
+              <li className={`${styles.title} main-color`}>Blog</li>
               <li>Blogging about my coding journey and roadblocks I encounter</li>
               <li className={styles.links}>
                 <a href="https://pargeo.hashnode.dev/" target="_blank" rel="noreferrer noopener">
