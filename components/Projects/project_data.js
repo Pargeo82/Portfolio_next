@@ -3,33 +3,52 @@
 const projectData = [
   {
     id: 1,
-    image: "Project1.jpg",
-    name: "Student calendar",
-    description:
-      "Admins assign working slots to which students apply. Admins then decide which student goes to which time slot",
-    technology: ["HTML", "CSS", "Javascript"],
-    link: "https://github.com/Pargeo82/cedeterijaStudenti",
-    linkText: "Github link",
+    image: "cedeterija.png",
+    name: "Discogs album fetcher",
+    description: "Data fetcher from discogs API, to input into POS database",
+    technology: ["NextJS", "CSS"],
+    link: "cedeterija",
+    linkType: "inside",
   },
   {
     id: 2,
-    image: "Blog.jpg",
-    name: "Blog",
-    description: "Blogging about learning and problems I encounter",
-    technology: [],
-    link: "https://pargeo.hashnode.dev/",
-    linkText: "Link",
+    image: "projectGt.png",
+    name: "Bar online menu",
+    description: "Mobile-first online menu for a bar",
+    technology: ["NextJS", "CSS", "MongoDB"],
+    link: "gt",
+    linkType: "inside",
   },
   {
     id: 3,
     image: "Portfolio.jpg",
     name: "Portofolio site",
-    description:
-      "This project. I know it can be done in vanilla JS, but working in nextJS is a great practice",
+    description: "This site done in NextJS after a couple of iterations in other tech",
     technology: ["NextJS", "CSS"],
-    link: "https://github.com/Pargeo82/Portfolio_next",
-    linkText: "Github link",
+    link: "portfolio",
+    linkType: "inside",
   },
+  // {
+  //   id: 4,
+  //   image: "Blog.jpg",
+  //   name: "Blog",
+  //   description: "Blogging about my coding journey and roadblocks I encounter",
+  //   technology: [],
+  //   link: "https://pargeo.hashnode.dev/",
+  //   linkText: "Link",
+  //   linkType: "outside",
+  // },
+
+  // {
+  //   id: 4,
+  //   image: "Project1.jpg",
+  //   name: "Student calendar",
+  //   description:
+  //     "Admins assign working slots to which students apply. Admins then decide which student goes to which time slot",
+  //   technology: ["HTML", "CSS", "Javascript"],
+  //   link: "https://github.com/Pargeo82/cedeterijaStudenti",
+  //   linkText: "Github link",
+  // },
 ];
 
 export default projectData;
