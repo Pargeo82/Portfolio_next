@@ -15,6 +15,9 @@ const technoData = [
     name: "NextJS",
   },
   {
+    name: "Typescript",
+  },
+  {
     name: "NodeJS",
   },
   {

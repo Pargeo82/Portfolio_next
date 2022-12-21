@@ -17,6 +17,19 @@
   font-size: 1.35rem;
 }
 
+.workText {
+  text-align: left;
+}
+
+.workCard {
+  width: 50%;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .card {
     max-width: calc(50% - 2rem);

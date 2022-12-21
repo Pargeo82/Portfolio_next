@@ -41,7 +41,12 @@ export default function Home() {
               rel="noreferrer"
               title="twitter link"
             >
-              <Image src="/icons8-twitter.svg" alt="twitter" width={40} height={40} />
+              <Image
+                src="/icons8-twitter.svg"
+                alt="twitter"
+                width={40}
+                height={40}
+              />
             </a>
             <a
               href="https://github.com/Pargeo82"
@@ -49,7 +54,12 @@ export default function Home() {
               rel="noreferrer"
               title="github link"
             >
-              <Image src="/icons8-github.svg" alt="github" width={40} height={40} />
+              <Image
+                src="/icons8-github.svg"
+                alt="github"
+                width={40}
+                height={40}
+              />
             </a>
           </div>
         </div>
@@ -59,8 +69,13 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.right}>
-        {/* <Image src="/Pargeo2.png" alt="me" width={375} height={518} layout="fixed" /> */}
-        <Image src="/Pargeo2.png" alt="me" width={750} height={931} layout="responsive" />
+        <Image
+          src="/Pargeo2.png"
+          alt="me"
+          width={750}
+          height={931}
+          layout="responsive"
+        />
       </div>
     </div>
   );

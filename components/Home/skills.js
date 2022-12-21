@@ -15,10 +15,13 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={[styles.title, "main-color"].join(" ")}>Efficiency</li>
+            <li className={[styles.title, "main-color"].join(" ")}>
+              Efficiency
+            </li>
             <li>
-              I live by this. Use the least amount of time, energy and complications to reach a goal
-              (not at the expense of quality, though)
+              I live by this. Use the least amount of time, energy and
+              complications to reach a goal (not at the expense of quality,
+              though)
             </li>
           </ul>
         </div>
@@ -31,8 +34,13 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={[styles.title, "main-color"].join(" ")}>Goal oriented</li>
-            <li>I always try to set smaller goals in order to reach the greater one</li>
+            <li className={[styles.title, "main-color"].join(" ")}>
+              Goal oriented
+            </li>
+            <li>
+              I always try to set smaller goals in order to reach the greater
+              one
+            </li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -44,8 +52,13 @@ export default function Skills() {
               width={200}
               height={200}
             />
-            <li className={[styles.title, "main-color"].join(" ")}>Problem solving</li>
-            <li>When you divide bigger problems, smaller ones don&apos;t seem as big</li>
+            <li className={[styles.title, "main-color"].join(" ")}>
+              Problem solving
+            </li>
+            <li>
+              When you divide bigger problems, smaller ones don&apos;t seem as
+              big
+            </li>
           </ul>
         </div>
         <div className={styles.card}>
@@ -59,8 +72,8 @@ export default function Skills() {
             />
             <li className={[styles.title, "main-color"].join(" ")}>Teamwork</li>
             <li>
-              You can&apos;t grow without a team, everything is better and faster, and more fun in
-              one
+              You can&apos;t grow without a team, everything is better and
+              faster, and more fun in one
             </li>
           </ul>
         </div>
