@@ -46,7 +46,7 @@ export default function Work() {
         <div className={styles.images}>
           <Image
             className={styles.workCard}
-            src="/pandaLogo.png"
+            src="/PandaLogo.png"
             alt="AI Panda logo"
             width={400}
             height={133}
