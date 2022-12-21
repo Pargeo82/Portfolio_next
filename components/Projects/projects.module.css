@@ -42,28 +42,23 @@
     width: 100%;
     text-align: center;
   }
-
   .card {
     max-width: 80%;
     text-align: center;
     margin-bottom: 2rem;
   }
-
   .techno {
     justify-content: center;
   }
-
   .main {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 767px) {
   .card {
     width: 100%;
   }
 }
-
 .imageHolder {
   display: block;
   width: 40%;
@@ -79,10 +74,9 @@
     width: 80%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .projectContainer {
     width: 80%;
     text-align: justify;
   }
-}
+}/*# sourceMappingURL=projects.module.css.map */

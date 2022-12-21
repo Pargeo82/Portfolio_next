@@ -42,11 +42,13 @@ export default function Portfolio() {
         </div>
         <h2>Description:</h2>
         <p className={styles.description}>
-          This is a project that had many iterations. I started it in vanilla JS, but as the time
-          passed by it got remade and remade. This is the look I&apos;m currently most satisfied
-          with, not too complex, but clean. NextJS got picked because it has great SEO from the box.
-          I have also spent significant amount of time on making google crawler work on it, did a
-          lot of accessibility tests and speed tests, so it would get as optimized as possible.
+          This is a project that had many iterations. I started it in vanilla
+          JS, but as the time passed by it got remade and remade. This is the
+          look I&apos;m currently most satisfied with, not too complex, but
+          clean. NextJS got picked because it has great SEO from the box. I have
+          also spent significant amount of time on making google crawler work on
+          it, did a lot of accessibility tests and speed tests, so it would get
+          as optimized as possible.
         </p>
         <h2>Links:</h2>
         <div>
@@ -56,7 +58,12 @@ export default function Portfolio() {
             rel="noreferrer"
             title="github link"
           >
-            <Image src="/icons8-github.svg" alt="github" width={40} height={40} />
+            <Image
+              src="/icons8-github.svg"
+              alt="github"
+              width={40}
+              height={40}
+            />
           </a>
         </div>
       </div>

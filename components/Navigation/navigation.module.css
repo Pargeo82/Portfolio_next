@@ -51,20 +51,16 @@
     padding: 1.4rem 12rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
-
   .navBar {
     height: calc(3vh + 50px);
   }
-
   .navMobile {
     display: flex;
   }
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -77,8 +73,7 @@
     border-top: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
   }
-
   .links {
     margin: 2rem 0;
   }
-}
+}/*# sourceMappingURL=navigation.module.css.map */

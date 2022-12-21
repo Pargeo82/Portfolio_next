@@ -36,13 +36,11 @@
     width: 60vw;
   }
 }
-
 @media screen and (max-width: 1210px) {
   .container {
     width: 75vw;
   }
 }
-
 @media screen and (max-width: 1050px) {
   .container {
     width: 85vw;
@@ -53,9 +51,8 @@
     width: 95vw;
   }
 }
-
 @media screen and (max-width: 767px) {
   .container {
     width: 100vw;
   }
-}
+}/*# sourceMappingURL=utilities.css.map */
