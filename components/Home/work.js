@@ -9,18 +9,29 @@ export default function Work() {
         <div className={`${styles.workText} ${styles.workCard}`}>
           <h3>November 2022 -</h3>
           <ul>
-            <li>Atomic Intelligence is a data-centric company</li>
+            <li>
+              <a
+                href="https://atmc.ai/"
+                target="_blank"
+                rel="noreferrer"
+                title="Atomic Intelligence"
+                className={styles.link}
+              >
+                Atomic Intelligence
+              </a>{" "}
+              is a data-centric company
+            </li>
             <li>Big data, streaming, DW/BI, Data Science, AI, Data Lakes</li>
             <li>working as a junior frontend (React) developer</li>
             <li>started November 2022</li>
           </ul>
         </div>
-        <div className={styles.images}>
+        <div className={`styles.images atomic`}>
           <a
             href="https://atmc.ai/"
             target="_blank"
             rel="noreferrer"
-            title="twitter link"
+            title="Atomic Intelligence"
           >
             <Image
               className={styles.workCard}

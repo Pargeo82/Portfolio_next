@@ -29,9 +29,23 @@
   display: flex;
   align-items: center;
 }
+.link {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 767px) {
   .card {
     max-width: calc(50% - 2rem);
   }
-}/*# sourceMappingURL=skills.module.css.map */
+  .workCard {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .workCard {
+    width: 85%;
+    order: 2;
+  }
+}
+
+/*# sourceMappingURL=skills.module.css.map */
