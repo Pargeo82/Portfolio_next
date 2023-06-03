@@ -17,7 +17,7 @@ export default function Homepage() {
   return (
     <div className="content">
       <Navbar />
-      <div className="container">
+      <div className="container" style={{ marginTop: 90 }}>
         <Home />
         <Skills />
         <h2 className="h1-title center">Technologies</h2>
