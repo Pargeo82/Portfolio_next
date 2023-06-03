@@ -23,6 +23,12 @@ const technoData = [
   {
     name: "MongoDB",
   },
+  {
+    name: "Sass",
+  },
+  {
+    name: "Redux",
+  },
 ];
 
 export default technoData;

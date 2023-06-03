@@ -1,7 +1,13 @@
 import Image from "next/image";
 import styles from "./hobbies.module.css";
 
-export default function Hobbies(props) {
+type HobbiesProps = {
+  name: string;
+  description: string;
+  image: string;
+};
+
+export default function Hobbies(props: HobbiesProps) {
   return (
     <div className={styles.card}>
       <ul className={styles.ul}>

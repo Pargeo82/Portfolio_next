@@ -33,10 +33,18 @@ export default function Portfolio() {
           <h2>Technologies used:</h2>
           <div className="flex-start">
             <div className={styles.techno}>
+              <Image
+                src="/Typescript.png"
+                alt="Typescript"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div className={styles.techno}>
               <Image src="/NextJS.png" alt="NextJS" width={50} height={50} />
             </div>
             <div className={styles.techno}>
-              <Image src="/CSS.png" alt="CSS" width={50} height={50} />
+              <Image src="/Sass.png" alt="CSS" width={50} height={50} />
             </div>
           </div>
         </div>
@@ -48,7 +56,9 @@ export default function Portfolio() {
           clean. NextJS got picked because it has great SEO from the box. I have
           also spent significant amount of time on making google crawler work on
           it, did a lot of accessibility tests and speed tests, so it would get
-          as optimized as possible.
+          as optimized as possible. After a while I have decided to add
+          typescript to the project, and Sass to make it more robust and easier
+          to maintain.
         </p>
         <h2>Links:</h2>
         <div>

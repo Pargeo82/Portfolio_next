@@ -1,4 +1,4 @@
-import Navigation from "./navigation";
+import Navigation from "./Navigation";
 import NavigationMobile from "./NavigationMobile";
 import styles from "./navigation.module.css";
 

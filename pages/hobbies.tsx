@@ -1,5 +1,5 @@
 import Navbar from "../components/Navigation/Navbar";
-import Hobbies from "../components/Hobbies/hobbies";
+import Hobbies from "../components/Hobbies/Hobbies";
 import hobbiesData from "../components/Hobbies/hobbies_data";
 import Footer from "../components/Footer/Footer";
 import styles from "../components/Hobbies/hobbies.module.css";

@@ -1,7 +1,7 @@
 import EmailButton from "../email_button";
 import DownloadButton from "../download_button";
 import Image from "next/image";
-import TypewriterEff from "./typewriter";
+import TypewriterEff from "./Typewriter";
 import styles from "./home.module.css";
 
 export default function Home() {
