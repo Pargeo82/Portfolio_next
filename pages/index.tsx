@@ -1,7 +1,8 @@
+//import GitHubCalendar from "react-github-calendar";
+
 import Navbar from "../components/Navigation/Navbar";
 import Home from "../components/Home/Home";
 import Skills from "../components/Home/Skills";
-import GitHubCalendar from "react-github-calendar";
 import Footer from "../components/Footer/Footer";
 import TechnoUse from "../components/Home/TechnoUse";
 import TechnoUseData from "../components/Home/TechnoUse_data";

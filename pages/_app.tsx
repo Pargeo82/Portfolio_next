@@ -1,9 +1,15 @@
+import { ComponentType } from "react";
 import "../styles/globals.css";
 import "../styles/design_tokens.css";
 import "../styles/utilities.css";
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
+type AppProps = {
+  Component: ComponentType;
+  pageProps: Record<string, unknown>;
+};
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
