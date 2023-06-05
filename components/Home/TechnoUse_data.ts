@@ -29,6 +29,9 @@ const technoData = [
   {
     name: "Redux",
   },
+  {
+    name: "Figma",
+  },
 ];
 
 export default technoData;
