@@ -11,10 +11,22 @@ export default function Cedeterija() {
         <h1>Bar pricelist</h1>
         <div className="flex">
           <div className={styles.imageHolder}>
-            <Image src="/gt1.png" alt="image 1" width={744} height={968} layout="responsive" />
+            <Image
+              src="/gt1.png"
+              alt="image 1"
+              width={744}
+              height={968}
+              layout="responsive"
+            />
           </div>
           <div className={styles.imageHolder}>
-            <Image src="/gt2.png" alt="image 2" width={744} height={968} layout="responsive" />
+            <Image
+              src="/gt2.png"
+              alt="image 2"
+              width={744}
+              height={968}
+              layout="responsive"
+            />
           </div>
         </div>
         <div>
@@ -33,9 +45,10 @@ export default function Cedeterija() {
         </div>
         <h2>Description:</h2>
         <p className={styles.description}>
-          This is an online bar manu for a bar in Zaprešić. It has a dashboard where admins (me and
-          the bar owner) have CRUD capabilites for articles, and the &quot;special offer&quot; at
-          the beginning of the page. It has been written in NextJS and database is MongoDB (Atlas).
+          This is an online bar manu for a bar in Zaprešić. It has a dashboard
+          where admins (me and the bar owner) have CRUD capabilites for
+          articles, and the &quot;special offer&quot; at the beginning of the
+          page. It has been written in NextJS and database is MongoDB (Atlas).
           It is mobile-first site.
         </p>
         <h2>Links:</h2>

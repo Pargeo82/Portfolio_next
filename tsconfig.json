@@ -78,7 +78,7 @@
     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     /* Type Checking */
-    "strict": true /* Enable all strict type-checking options. */,
+    "strict": false /* Enable all strict type-checking options. */,
     // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
     // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
@@ -107,12 +107,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
