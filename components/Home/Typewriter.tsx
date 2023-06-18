@@ -1,21 +1,34 @@
-import styles from "./typewriter.module.css";
-import Typewriter from "typewriter-effect";
+import { Typography, Stack } from '@mui/material';
+import Typewriter from 'typewriter-effect';
 
 export default function TypewriterEff() {
   return (
-    <div className={styles.containerDiv}>
-      <div>
-        <h2 className="h2-title">I&apos;m a</h2>
-      </div>
-      <h2 className="h2-title main-color">
-        <Typewriter
-          options={{
-            strings: ["junior developer"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </h2>
-    </div>
+    <Stack direction="row">
+      <Typography variant="h4" display="inline" gutterBottom>
+        I&apos;m a junior{' '}
+      </Typography>
+      <Stack direction="column" sx={{ ml: 1 }}>
+        <Typography variant="h4" color="primary" display="inline" gutterBottom>
+          <Typewriter
+            options={{
+              strings: ['frontend developer'], // Add empty string to match duration
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 122,
+            }}
+          />
+        </Typography>
+        <Typography variant="h4" color="primary" display="inline">
+          <Typewriter
+            options={{
+              strings: ['ux/ui designer'], // Add empty string to match duration
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 200,
+            }}
+          />
+        </Typography>
+      </Stack>
+    </Stack>
   );
 }

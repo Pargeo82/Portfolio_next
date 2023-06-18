@@ -1,5 +1,5 @@
-import styles from "./download_button.module.css";
-import Image from "next/image";
+import styles from './download_button.module.css';
+import Image from 'next/image';
 // "./Resume_Mislav_Markusic.pdf download";
 export default function DownloadButton() {
   return (
