@@ -14,14 +14,14 @@ export default function TypewriterEff() {
               strings: ['frontend developer'], // Add empty string to match duration
               autoStart: true,
               loop: true,
-              deleteSpeed: 122,
+              deleteSpeed: 165,
             }}
           />
         </Typography>
         <Typography variant="h4" color="primary" display="inline">
           <Typewriter
             options={{
-              strings: ['ux/ui designer'], // Add empty string to match duration
+              strings: ['ux / ui designer'], // Add empty string to match duration
               autoStart: true,
               loop: true,
               deleteSpeed: 200,

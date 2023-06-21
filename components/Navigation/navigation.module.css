@@ -48,8 +48,9 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: rgba(28, 28, 28, 0.9);
+  background-color: rgba(28, 28, 28, 0.8);
   width: 100%;
+  backdrop-filter: blur(10px);
 }
 
 @media screen and (min-width: 2000px) {

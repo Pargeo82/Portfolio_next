@@ -1,5 +1,5 @@
-import styles from "./navigation.module.css";
-import Navlinks from "./Navlinks";
+import styles from './navigation.module.css';
+import Navlinks from './Navlinks';
 
 export default function Navigation() {
   return (

@@ -23,13 +23,14 @@ const Hero = () => {
           </Typography>
           <TypewriterEff />
         </Stack>
-        <Stack direction="row" spacing={2} mt={8}>
+        <Stack direction="row" spacing={4} mt={10}>
           <Button variant="contained" onClick={() => Router.push('mailto:pargeo82@gmail.com')}>
             <Image src="/email20.svg" alt="email" width={30} height={30} />
             <Typography
               variant="button"
               color="secondary"
-              sx={{ textTransform: 'none', ml: 1, color: theme.palette.text.primary }}
+              letterSpacing={1}
+              sx={{ textTransform: 'bold', ml: 1, color: theme.palette.text.primary }}
             >
               Email
             </Typography>
@@ -45,7 +46,8 @@ const Hero = () => {
               <Typography
                 variant="button"
                 color="secondary"
-                sx={{ textTransform: 'none', mr: 1, color: theme.palette.text.primary }}
+                letterSpacing={1}
+                sx={{ textTransform: 'bold', mr: 1, color: theme.palette.text.primary }}
               >
                 Download CV
               </Typography>
