@@ -1,10 +1,7 @@
 //import GitHubCalendar from "react-github-calendar";
-import Router from 'next/router';
 import Skills from '../components/Home/Skills';
 import Work from '../components/Home/Work';
-import { Box, Stack, Typography, Grid, Button, useTheme } from '@mui/material';
-import TypewriterEff from '../components/Home/Typewriter';
-import Image from 'next/image';
+import { useTheme } from '@mui/material';
 import Hero from '../components/Home/Hero';
 import TechnologiesUsed from '../components/Home/TechnologiesUsed';
 
@@ -16,21 +13,8 @@ export default function Homepage() {
       <Hero />
       <Skills />
       <TechnologiesUsed />
+      <Work />
+      {/* <GitHubCalendar username="pargeo82" weekStart={1} /> */}
     </>
-    // <div className="content">
-    //   <div className="container" style={{ marginTop: 90 }}>
-    //     <Home />
-    //     <Skills />
-    //     <h2 className="h1-title center">Technologies</h2>
-    //     <div className="flex">{technoElement}</div>
-    //     <Work />
-    //     <div className={`margin-top flex ${styles.git}`}>
-    //       {/* <GitHubCalendar username="pargeo82" weekStart={1} /> */}
-    //     </div>
-    //   </div>
-    // </div>
   );
-}
-{
-  /* <div className="margin-top flex"></div> */
 }

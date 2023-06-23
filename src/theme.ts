@@ -17,11 +17,12 @@ const theme = createTheme({
       main: red.A400,
     },
     background: {
-      default: '#1c1c1c',
+      default: '#1C1C1C',
+      paper: '#262626',
     },
     text: {
       primary: '#E3E3E3',
-      secondary: '#1c1c1c',
+      secondary: '#1C1C1C',
     },
   },
   typography: {

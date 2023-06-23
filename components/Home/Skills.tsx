@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from '@mui/material';
-import styles from './skills.module.css';
 import Image from 'next/image';
 
 const skills = [
@@ -28,18 +27,50 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Box mb={10}>
-      <Typography variant="h3" className="h1-title center" mt={10} mb={6}>
+    <Box mb={16}>
+      <Typography
+        variant='h3'
+        className='h1-title center'
+        mb={6}
+        letterSpacing={2}
+      >
         Why hire me?
       </Typography>
-      <Grid container rowSpacing={4} justifyContent="center" alignItems="flex-start">
+      <Grid
+        container
+        rowSpacing={4}
+        justifyContent='center'
+        alignItems='flex-start'
+      >
         {skills.map((skill, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
-            <Image src={skill.image} alt={skill.name} width={200} height={200} />
-            <Typography variant="h4" mt={4} letterSpacing={-1} textAlign={'center'} color="primary">
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            key={index}
+          >
+            <Image
+              src={skill.image}
+              alt={skill.name}
+              width={200}
+              height={200}
+            />
+            <Typography
+              variant='h4'
+              mt={4}
+              letterSpacing={-1}
+              textAlign={'center'}
+              color='primary'
+            >
               {skill.name}
             </Typography>
-            <Typography variant="body1" mt={2} textAlign={'center'} letterSpacing={1}>
+            <Typography
+              variant='body1'
+              mt={2}
+              textAlign={'center'}
+              letterSpacing={1}
+            >
               {skill.description}
             </Typography>
           </Grid>
