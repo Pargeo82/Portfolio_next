@@ -51,7 +51,6 @@ const ProjectCard = (props: Props) => {
     <Grid
       item
       xs={12}
-      sm={6}
       md={4}
       sx={{ ...props.sx }}
     >

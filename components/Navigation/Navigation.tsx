@@ -1,6 +1,6 @@
 import Navlinks from './Navlinks';
 
-export default function Navigation() {
+const Navigation = () => {
   return (
     <nav
       style={{
@@ -14,4 +14,6 @@ export default function Navigation() {
       <Navlinks />
     </nav>
   );
-}
+};
+
+export default Navigation;

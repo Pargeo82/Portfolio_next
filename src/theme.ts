@@ -30,4 +30,22 @@ const theme = createTheme({
   },
 });
 
+theme.typography.body1 = {
+  fontSize: '1rem',
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.1rem',
+  },
+};
+
+theme.typography.h1 = {
+  fontSize: '2.2rem',
+  fontWeight: 500,
+  [theme.breakpoints.up('md')]: {
+    fontSize: '3rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '3.5rem',
+  },
+};
+
 export default theme;

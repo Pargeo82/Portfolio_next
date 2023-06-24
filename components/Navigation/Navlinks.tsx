@@ -2,13 +2,23 @@ import { Box, Stack, Typography, useTheme, useMediaQuery } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Navlinks() {
+type NavlinksProps = {
+  onNavToggle?: () => void;
+};
+
+const Navlinks = ({ onNavToggle }: NavlinksProps) => {
   const theme = useTheme();
   const primaryText = theme.palette.text.primary;
   const primary = theme.palette.primary.main;
   const router = useRouter();
   const currentRoute = router.pathname;
   const mobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  const handleLinkClick = () => {
+    if (mobile) {
+      onNavToggle && onNavToggle();
+    }
+  };
 
   return (
     <Box>
@@ -18,9 +28,11 @@ export default function Navlinks() {
         mx={12}
         my={3}
         justifyContent={'flex-end'}
+        alignItems={'flex-end'}
       >
         <Link href='/'>
           <Typography
+            onClick={handleLinkClick}
             variant='h6'
             fontWeight={700}
             sx={{
@@ -37,6 +49,7 @@ export default function Navlinks() {
         </Link>{' '}
         <Link href='/projects'>
           <Typography
+            onClick={handleLinkClick}
             variant='h6'
             fontWeight={700}
             sx={{
@@ -53,6 +66,7 @@ export default function Navlinks() {
         </Link>{' '}
         <Link href='/hobbies'>
           <Typography
+            onClick={handleLinkClick}
             variant='h6'
             fontWeight={700}
             sx={{
@@ -70,4 +84,6 @@ export default function Navlinks() {
       </Stack>
     </Box>
   );
-}
+};
+
+export default Navlinks;

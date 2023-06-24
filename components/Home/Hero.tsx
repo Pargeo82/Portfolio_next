@@ -23,12 +23,12 @@ const Hero = () => {
           spacing={3}
         >
           <Typography
-            variant='h3'
+            variant='h1'
             gutterBottom
           >
             Hi, I&apos;m{' '}
             <Typography
-              variant='h3'
+              variant='h1'
               color='primary'
               display='inline'
               component='span'

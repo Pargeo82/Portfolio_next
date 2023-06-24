@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import { Stack } from '@mui/material';
+import { Stack, useTheme, alpha } from '@mui/material';
 import Navlinks from './Navlinks';
 
-export default function NavigationMobile() {
+const NavigationMobile = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
+  const theme = useTheme();
 
   return (
     <nav
@@ -14,6 +15,7 @@ export default function NavigationMobile() {
         top: 0,
         zIndex: 100,
         backdropFilter: 'blur(10px)',
+        backgroundColor: alpha(theme.palette.background.default, 0.8),
       }}
     >
       <Stack
@@ -41,7 +43,9 @@ export default function NavigationMobile() {
           />
         </div>
       </Stack>
-      {showNav && <Navlinks />}
+      {showNav && <Navlinks onNavToggle={() => setShowNav(!showNav)} />}
     </nav>
   );
-}
+};
+
+export default NavigationMobile;
