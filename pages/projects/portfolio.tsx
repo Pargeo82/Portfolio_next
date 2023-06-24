@@ -1,83 +1,93 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navigation/Navbar";
-import styles from "../../components/Projects/projects.module.css";
-import Image from "next/image";
+import Image from 'next/image';
+import { Typography, Grid, Stack } from '@mui/material';
+import { useTheme } from '@mui/material';
+import projectData from '../../components/Projects/projectData';
+import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
+import { TechnoTypes } from '../../types/technoTypes';
 
-export default function Portfolio() {
+export default function Cedeterija() {
+  const theme = useTheme();
+  const primaryText = theme.palette.text.primary;
+  const project = projectData.find((project) => project.name === 'Portfolio');
   return (
-    <div className="content">
-      <Navbar />
-      <div className={`container ${styles.projectContainer}`}>
-        <h1>Portfolio site</h1>
-        <div className="flex">
-          <div className={styles.imageHolder}>
-            <Image
-              src="/Portfolio.jpg"
-              alt="image 1"
-              width={960}
-              height={483}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageHolder}>
-            <Image
-              src="/portfolio2.png"
-              alt="image 2"
-              width={960}
-              height={483}
-              layout="responsive"
-            />
-          </div>
-        </div>
-        <div>
-          <h2>Technologies used:</h2>
-          <div className="flex-start">
-            <div className={styles.techno}>
+    <>
+      <Typography
+        variant='h2'
+        gutterBottom
+      >
+        {project?.title}
+      </Typography>
+      <Grid
+        container
+        spacing={4}
+        mb={8}
+      >
+        {project?.imageArray?.map((image, index) => {
+          return (
+            <Grid
+              item
+              xs={12}
+              md={6}
+            >
               <Image
-                src="/Typescript.png"
-                alt="Typescript"
-                width={50}
-                height={50}
+                key={index}
+                src={image}
+                alt={project.name}
+                width={768}
+                height={400}
+                layout='responsive'
               />
-            </div>
-            <div className={styles.techno}>
-              <Image src="/NextJS.png" alt="NextJS" width={50} height={50} />
-            </div>
-            <div className={styles.techno}>
-              <Image src="/Sass.png" alt="CSS" width={50} height={50} />
-            </div>
-          </div>
-        </div>
-        <h2>Description:</h2>
-        <p className={styles.description}>
-          This is a project that had many iterations. I started it in vanilla
-          JS, but as the time passed by it got remade and remade. This is the
-          look I&apos;m currently most satisfied with, not too complex, but
-          clean. NextJS got picked because it has great SEO from the box. I have
-          also spent significant amount of time on making google crawler work on
-          it, did a lot of accessibility tests and speed tests, so it would get
-          as optimized as possible. After a while I have decided to add
-          typescript to the project, and Sass to make it more robust and easier
-          to maintain.
-        </p>
-        <h2>Links:</h2>
-        <div>
+            </Grid>
+          );
+        })}
+      </Grid>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Technologies used:
+      </Typography>
+      <ProjectTechnologies
+        technologies={project?.technology as TechnoTypes[]}
+        sx={{ marginBottom: 8 }}
+      />
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Description:
+      </Typography>
+      <Typography
+        variant='body1'
+        mb={8}
+        textAlign={'justify'}
+      >
+        {project?.longerDescription}
+      </Typography>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Links:
+      </Typography>
+      <Stack mb={12}>
+        {project?.gitUrl && (
           <a
-            href="https://github.com/Pargeo82/Portfolio_next"
-            target="_blank"
-            rel="noreferrer"
-            title="github link"
+            href={project?.gitUrl}
+            target='_blank'
+            rel='noreferrer noopener'
+            title='github link'
+            style={{ color: primaryText }}
           >
             <Image
-              src="/icons8-github.svg"
-              alt="github"
+              src='/github.svg'
+              alt='github'
               width={40}
               height={40}
             />
           </a>
-        </div>
-      </div>
-      <Footer />
-    </div>
+        )}
+      </Stack>
+    </>
   );
 }

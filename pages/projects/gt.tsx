@@ -1,70 +1,92 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navigation/Navbar";
-import styles from "../../components/Projects/projects.module.css";
-import Image from "next/image";
+import Image from 'next/image';
+import { Typography, Grid, Stack } from '@mui/material';
+import { useTheme } from '@mui/material';
+import projectData from '../../components/Projects/projectData';
+import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
+import { TechnoTypes } from '../../types/technoTypes';
 
 export default function Cedeterija() {
+  const theme = useTheme();
+  const primaryText = theme.palette.text.primary;
+  const project = projectData.find((project) => project.name === 'GT');
   return (
-    <div className="content">
-      <Navbar />
-      <div className={`container ${styles.projectContainer}`}>
-        <h1>Bar pricelist</h1>
-        <div className="flex">
-          <div className={styles.imageHolder}>
-            <Image
-              src="/gt1.png"
-              alt="image 1"
-              width={744}
-              height={968}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageHolder}>
-            <Image
-              src="/gt2.png"
-              alt="image 2"
-              width={744}
-              height={968}
-              layout="responsive"
-            />
-          </div>
-        </div>
-        <div>
-          <h2>Technologies used:</h2>
-          <div className="flex-start">
-            <div className={styles.techno}>
-              <Image src="/NextJS.png" alt="NextJS" width={50} height={50} />
-            </div>
-            <div className={styles.techno}>
-              <Image src="/CSS.png" alt="CSS" width={50} height={50} />
-            </div>
-            <div className={styles.techno}>
-              <Image src="/mongoDB.png" alt="MongoDB" width={50} height={50} />
-            </div>
-          </div>
-        </div>
-        <h2>Description:</h2>
-        <p className={styles.description}>
-          This is an online bar manu for a bar in Zaprešić. It has a dashboard
-          where admins (me and the bar owner) have CRUD capabilites for
-          articles, and the &quot;special offer&quot; at the beginning of the
-          page. It has been written in NextJS and database is MongoDB (Atlas).
-          It is mobile-first site.
-        </p>
-        <h2>Links:</h2>
-        <div>
+    <>
+      <Typography
+        variant='h2'
+        gutterBottom
+      >
+        {project?.title}
+      </Typography>
+      <Grid
+        container
+        spacing={4}
+        mb={8}
+      >
+        {project?.imageArray?.map((image, index) => {
+          return (
+            <Grid
+              item
+              xs={12}
+              md={6}
+            >
+              <Image
+                key={index}
+                src={image}
+                alt={project.name}
+                width={744}
+                height={968}
+                layout='responsive'
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Technologies used:
+      </Typography>
+      <ProjectTechnologies
+        technologies={project?.technology as TechnoTypes[]}
+        sx={{ marginBottom: 8 }}
+      />
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Description:
+      </Typography>
+      <Typography
+        variant='body1'
+        mb={8}
+        textAlign={'justify'}
+      >
+        {project?.longerDescription}
+      </Typography>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Links:
+      </Typography>
+      <Stack mb={12}>
+        {project?.url && (
           <a
-            href="https://www.caffebargt-martinko.hr/"
-            target="_blank"
-            rel="noreferrer"
-            title="GT menu"
-            className={styles.link}
+            href={project?.url}
+            target='_blank'
+            rel='noreferrer noopener'
+            style={{ color: primaryText }}
           >
-            GT Menu
+            <Typography
+              variant='body1'
+              gutterBottom
+            >
+              {project.linkTitle}
+            </Typography>
           </a>
-        </div>
-      </div>
-      <Footer />
-    </div>
+        )}
+      </Stack>
+    </>
   );
 }

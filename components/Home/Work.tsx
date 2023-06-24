@@ -141,6 +141,7 @@ export default function Work() {
                       TechnoTypes.Redux,
                       TechnoTypes.TypeScript,
                     ]}
+                    px={6}
                   />
                 </Box>
               </CardContent>

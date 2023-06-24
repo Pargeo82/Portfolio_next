@@ -1,12 +1,12 @@
-import { Container } from "@mui/material";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navigation/Navbar";
+import { Container } from '@mui/material';
+import Footer from '../Footer/Footer';
+import Navbar from '../Navigation/Navbar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <Container>{children}</Container>
+      <Container sx={{ mt: 12 }}>{children}</Container>
       <Footer />
     </>
   );

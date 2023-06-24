@@ -1,12 +1,12 @@
+import { useMediaQuery, useTheme } from '@mui/material';
 import Navigation from './Navigation';
 import NavigationMobile from './NavigationMobile';
-import styles from './navigation.module.css';
 
-export default function Navbar() {
-  return (
-    <div className={styles.navBar}>
-      <Navigation />
-      <NavigationMobile />
-    </div>
-  );
-}
+const Navbar = () => {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('md'));
+
+  return <>{mobile ? <NavigationMobile /> : <Navigation />}</>;
+};
+
+export default Navbar;

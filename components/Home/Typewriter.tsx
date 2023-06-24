@@ -40,7 +40,7 @@ export default function TypewriterEff() {
               strings: ['ux / ui designer'], // Add empty string to match duration
               autoStart: true,
               loop: true,
-              deleteSpeed: 199,
+              deleteSpeed: 201,
             }}
           />
         </Typography>

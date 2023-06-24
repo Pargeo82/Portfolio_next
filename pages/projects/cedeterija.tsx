@@ -1,76 +1,108 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navigation/Navbar";
-import styles from "../../components/Projects/projects.module.css";
-import Image from "next/image";
+import Image from 'next/image';
+import { Typography, Grid, Stack } from '@mui/material';
+import { useTheme } from '@mui/material';
+import projectData from '../../components/Projects/projectData';
+import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
+import { TechnoTypes } from '../../types/technoTypes';
 
 export default function Cedeterija() {
+  const theme = useTheme();
+  const primaryText = theme.palette.text.primary;
+  const project = projectData.find((project) => project.name === 'Cedeterija');
   return (
-    <div className="content">
-      <Navbar />
-      <div className={`container ${styles.projectContainer}`}>
-        <h1>Discogs album fetcher</h1>
-        <div className="flex">
-          <div className={styles.imageHolder}>
-            <Image
-              src="/cedeterija3.png"
-              alt="image 1"
-              width={768}
-              height={400}
-              layout="responsive"
-            />
-          </div>
-          <div className={styles.imageHolder}>
-            <Image
-              src="/cedeterija2.png"
-              alt="image 2"
-              width={768}
-              height={400}
-              layout="responsive"
-            />
-          </div>
-        </div>
-        <div>
-          <h2>Technologies used:</h2>
-          <div className="flex-start">
-            <div className={styles.techno}>
-              <Image src="/NextJS.png" alt="/NextJS" width={50} height={50} />
-            </div>
-            <div className={styles.techno}>
-              <Image src="/CSS.png" alt="/CSS" width={50} height={50} />
-            </div>
-          </div>
-        </div>
-        <h2>Description:</h2>
-        <p className={styles.description}>
-          At previous job a problem I wanted to resolve was when receiving new albums that
-          we&apos;ve never had before, there is a lot of data required to manually input. POS system
-          is somewhat old and it requires .csv file input to populate the data, and a really long
-          column table for it. I realized I could fetch data from discogs (which is maybe the
-          biggest online music data library and marketplace), and use that data to populate the
-          table and the file to import in POS
-        </p>
-        <h2>Links:</h2>
-        <a
-          href="https://github.com/Pargeo82/cedeterija"
-          target="_blank"
-          rel="noreferrer"
-          title="github link"
-        >
-          <Image src="/icons8-github.svg" alt="github" width={40} height={40} />
-        </a>
-        <div>
+    <>
+      <Typography
+        variant='h2'
+        gutterBottom
+      >
+        {project?.title}
+      </Typography>
+      <Grid
+        container
+        spacing={4}
+        mb={8}
+      >
+        {project?.imageArray?.map((image, index) => {
+          return (
+            <Grid
+              item
+              xs={12}
+              md={6}
+            >
+              <Image
+                key={index}
+                src={image}
+                alt={project.name}
+                width={768}
+                height={400}
+                layout='responsive'
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Technologies used:
+      </Typography>
+      <ProjectTechnologies
+        technologies={project?.technology as TechnoTypes[]}
+        sx={{ marginBottom: 8 }}
+      />
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Description:
+      </Typography>
+      <Typography
+        variant='body1'
+        mb={8}
+        textAlign={'justify'}
+      >
+        {project?.longerDescription}
+      </Typography>
+      <Typography
+        variant='h4'
+        gutterBottom
+      >
+        Links:
+      </Typography>
+      <Stack mb={12}>
+        {project?.url && (
           <a
-            href="https://cedeterija.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            title="Cedeterija app"
-            className={styles.link}
+            href={project?.url}
+            target='_blank'
+            rel='noreferrer noopener'
+            style={{ color: primaryText }}
           >
-            Cedeterija app
+            <Typography
+              variant='body1'
+              gutterBottom
+            >
+              {project.linkTitle}
+            </Typography>
           </a>
-        </div>
-      </div>
-      <Footer />
-    </div>
+        )}
+        {project?.gitUrl && (
+          <a
+            href={project?.gitUrl}
+            target='_blank'
+            rel='noreferrer noopener'
+            title='github link'
+            style={{ color: primaryText }}
+          >
+            <Image
+              src='/github.svg'
+              alt='github'
+              width={40}
+              height={40}
+            />
+          </a>
+        )}
+      </Stack>
+    </>
   );
 }

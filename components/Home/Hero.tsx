@@ -11,7 +11,6 @@ const Hero = () => {
   return (
     <Grid
       container
-      mt={12}
       mb={16}
     >
       <Grid

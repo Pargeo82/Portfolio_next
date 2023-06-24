@@ -1,18 +1,23 @@
 import Image from 'next/image';
 import { Grid, Tooltip } from '@mui/material';
+import { CSSProperties } from 'react';
 import { TechnoTypes } from '../../types/technoTypes';
 
 type Props = {
   technologies: TechnoTypes[];
   xs?: number;
+  px?: number;
+  spacing?: number;
+  sx?: CSSProperties;
 };
 
-const ProjectTechnologies = ({ technologies, xs }: Props) => {
+const ProjectTechnologies = ({ technologies, xs, px = 1, spacing = 4, sx }: Props) => {
   return (
     <Grid
       container
-      spacing={4}
-      px={6}
+      spacing={spacing}
+      px={px}
+      sx={{ ...sx }}
     >
       {technologies.map((technology, index) => {
         return (
