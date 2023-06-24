@@ -5,8 +5,14 @@ import NavigationMobile from './NavigationMobile';
 const Navbar = () => {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down('md'));
+  const desktop = useMediaQuery(theme.breakpoints.up('md'));
 
-  return <>{mobile ? <NavigationMobile /> : <Navigation />}</>;
+  return (
+    <>
+      {mobile && <NavigationMobile />}
+      {desktop && <Navigation />}
+    </>
+  );
 };
 
 export default Navbar;

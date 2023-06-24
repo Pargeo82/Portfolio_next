@@ -12,7 +12,7 @@ const TypewriterEff = () => {
       </Typography>
       <Stack
         direction='column'
-        sx={{ ml: 1 }}
+        sx={{ ml: 1, height: 50 }}
       >
         <Typography
           variant='h4'
