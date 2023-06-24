@@ -42,7 +42,10 @@ const Footer = () => {
         >
           <GitHub sx={{ fontSize: 40 }} />
         </a>
-        <IconButton onClick={() => Router.push('mailto:pargeo82@gmail.com')}>
+        <IconButton
+          onClick={() => Router.push('mailto:pargeo82@gmail.com')}
+          aria-label='Email me'
+        >
           <Email sx={{ fontSize: 40, color: primaryText }} />
         </IconButton>
       </Stack>

@@ -63,6 +63,7 @@ const Hero = () => {
             size='large'
             onClick={() => Router.push('mailto:pargeo82@gmail.com')}
             startIcon={<MailOutline sx={{ color: primaryText }} />}
+            aria-label='Email me'
           >
             <Typography
               variant='button'
@@ -77,6 +78,7 @@ const Hero = () => {
             variant='outlined'
             size='large'
             endIcon={<Download sx={{ color: primaryText }} />}
+            aria-label='Download CV'
           >
             <a
               href='./Mislav_Markusic_CV.pdf'

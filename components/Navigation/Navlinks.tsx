@@ -30,7 +30,10 @@ const Navlinks = ({ onNavToggle }: NavlinksProps) => {
         justifyContent={'flex-end'}
         alignItems={'flex-end'}
       >
-        <Link href='/'>
+        <Link
+          href='/'
+          aria-label='Home link'
+        >
           <Typography
             onClick={handleLinkClick}
             variant='h6'
@@ -47,7 +50,10 @@ const Navlinks = ({ onNavToggle }: NavlinksProps) => {
             Home
           </Typography>
         </Link>{' '}
-        <Link href='/projects'>
+        <Link
+          href='/projects'
+          aria-label='Projects link'
+        >
           <Typography
             onClick={handleLinkClick}
             variant='h6'
@@ -64,7 +70,10 @@ const Navlinks = ({ onNavToggle }: NavlinksProps) => {
             Projects
           </Typography>
         </Link>{' '}
-        <Link href='/hobbies'>
+        <Link
+          href='/hobbies'
+          aria-label='Hobbies link'
+        >
           <Typography
             onClick={handleLinkClick}
             variant='h6'
