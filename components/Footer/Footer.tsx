@@ -1,7 +1,10 @@
-import { Typography, Stack } from '@mui/material';
-import Image from 'next/image';
+import { Typography, Stack, useTheme, IconButton } from '@mui/material';
+import { GitHub, LinkedIn, Twitter, Email } from '@mui/icons-material';
+import Router from 'next/router';
 
-export default function Footer() {
+const Footer = () => {
+  const theme = useTheme();
+  const primaryText = theme.palette.text.primary;
   const currentYear = new Date().getFullYear();
   return (
     <footer>
@@ -17,41 +20,31 @@ export default function Footer() {
           target='_blank'
           rel='noreferrer'
           title='linkedin link'
+          style={{ color: primaryText }}
         >
-          <Image
-            className='icon'
-            src='/linkedin.svg'
-            alt='linkedin'
-            width={40}
-            height={40}
-          />
+          <LinkedIn sx={{ fontSize: 40 }} />
         </a>
         <a
           href='https://twitter.com/MislavMarkusic'
           target='_blank'
           rel='noreferrer'
           title='twitter link'
+          style={{ color: primaryText }}
         >
-          <Image
-            src='/twitter.svg'
-            alt='twitter'
-            width={40}
-            height={40}
-          />
+          <Twitter sx={{ fontSize: 40 }} />
         </a>
         <a
           href='https://github.com/Pargeo82'
           target='_blank'
           rel='noreferrer'
           title='github link'
+          style={{ color: primaryText }}
         >
-          <Image
-            src='/github.svg'
-            alt='github'
-            width={40}
-            height={40}
-          />
+          <GitHub sx={{ fontSize: 40 }} />
         </a>
+        <IconButton onClick={() => Router.push('mailto:pargeo82@gmail.com')}>
+          <Email sx={{ fontSize: 40, color: primaryText }} />
+        </IconButton>
       </Stack>
       <Typography
         variant='h6'
@@ -62,4 +55,6 @@ export default function Footer() {
       </Typography>
     </footer>
   );
-}
+};
+
+export default Footer;

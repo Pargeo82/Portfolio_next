@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material';
 import projectData from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
+import { GitHub } from '@mui/icons-material';
 
 export default function Cedeterija() {
   const theme = useTheme();
@@ -28,6 +29,7 @@ export default function Cedeterija() {
               item
               xs={12}
               md={6}
+              key={index}
             >
               <Image
                 key={index}
@@ -94,12 +96,7 @@ export default function Cedeterija() {
             title='github link'
             style={{ color: primaryText }}
           >
-            <Image
-              src='/github.svg'
-              alt='github'
-              width={40}
-              height={40}
-            />
+            <GitHub sx={{ fontSize: 40 }} />
           </a>
         )}
       </Stack>

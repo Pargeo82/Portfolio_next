@@ -14,11 +14,11 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
     "next": "^12.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.3",
-    "typeface-poppins": "^1.1.13",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

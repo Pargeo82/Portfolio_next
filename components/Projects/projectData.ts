@@ -10,7 +10,7 @@ const projectData = [
     technology: [TechnoTypes.TypeScript, TechnoTypes.CSS, TechnoTypes.NextJS],
     link: 'cedeterija',
     outsideLink: false,
-    imageArray: ['/projects/gt1.png', '/projects/cedeterija3.png'],
+    imageArray: ['/projects/cedeterija2.png', '/projects/cedeterija3.png'],
     longerDescription: `At previous job a problem I wanted to resolve was when receiving new albums that we've never had before, there is a lot of data required to manually input. POS system is somewhat old and it requires .csv file input to populate the data, and a really long column table for it. I realized I could fetch data from discogs (which is maybe the biggest online music data library and marketplace), and use that data to populate the table and the file to import in POS`,
     linkTitle: 'Cedeterija app',
     url: 'https://cedeterija.vercel.app/',

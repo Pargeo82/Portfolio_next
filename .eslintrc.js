@@ -26,7 +26,6 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
   rules: {
     //indent: ['error', 2, { SwitchCase: 1 }], Prettier and Eslint clash, so we disabled this line.
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
