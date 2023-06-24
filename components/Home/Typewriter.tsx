@@ -1,7 +1,7 @@
 import { Typography, Stack } from '@mui/material';
 import Typewriter from 'typewriter-effect';
 
-export default function TypewriterEff() {
+const TypewriterEff = () => {
   return (
     <Stack direction={{ xs: 'column', sm: 'row' }}>
       <Typography
@@ -25,7 +25,7 @@ export default function TypewriterEff() {
               strings: ['frontend developer'], // Add empty string to match duration
               autoStart: true,
               loop: true,
-              deleteSpeed: 164,
+              deleteSpeed: 168,
             }}
           />
         </Typography>
@@ -39,11 +39,13 @@ export default function TypewriterEff() {
               strings: ['ux / ui designer'], // Add empty string to match duration
               autoStart: true,
               loop: true,
-              deleteSpeed: 201,
+              deleteSpeed: 209,
             }}
           />
         </Typography>
       </Stack>
     </Stack>
   );
-}
+};
+
+export default TypewriterEff;

@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import { Typography, Grid, Stack, Box } from '@mui/material';
+import { Typography, Grid, Stack, Box, useTheme, useMediaQuery } from '@mui/material';
 import { TechnoTypes } from '../../types/technoTypes';
 
 const technologiesArray = Object.values(TechnoTypes);
 
 const TechnologiesUsed = () => {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('md'));
   const technologyElements = technologiesArray.map((technology, index) => {
     return (
       <Grid
@@ -17,14 +19,13 @@ const TechnologiesUsed = () => {
         <Stack
           direction='row'
           alignContent={'bottom'}
-          spacing={1}
           alignItems='end'
         >
           <Image
             src={`/technologies/${technology}.png`}
             alt={technology}
-            width={50}
-            height={50}
+            width={mobile ? 45 : 50}
+            height={mobile ? 45 : 50}
             layout='fixed'
           />
           <Typography variant='h5'>{technology}</Typography>

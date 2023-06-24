@@ -67,8 +67,8 @@ const Hero = () => {
             <Typography
               variant='button'
               color='secondary'
-              letterSpacing={1}
-              sx={{ fontWeight: 700, textTransform: 'none', ml: 1, color: primaryText }}
+              letterSpacing={-1}
+              sx={{ fontWeight: 600, textTransform: 'none', color: primaryText }}
             >
               Email
             </Typography>
@@ -89,11 +89,10 @@ const Hero = () => {
               <Typography
                 variant='button'
                 color='secondary'
-                letterSpacing={1}
+                letterSpacing={-1}
                 sx={{
-                  fontWeight: 700,
+                  fontWeight: 600,
                   textTransform: 'none',
-                  mr: 1,
                   color: primaryText,
                 }}
               >

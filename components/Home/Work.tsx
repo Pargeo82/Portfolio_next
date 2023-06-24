@@ -98,11 +98,11 @@ export default function Work() {
             >
               <CardMedia
                 component='img'
-                height={mobile ? '150' : '180'}
+                height={mobile ? '140' : '180'}
                 image='/PandaLogo.png'
                 alt='AI Panda logo'
               />
-              <CardContent sx={{ display: 'flex', flexDirection: 'column', height: 300 }}>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
                 <List
                   dense
                   sx={{ listStyle: 'disc', pl: 4 }}
@@ -134,11 +134,11 @@ export default function Work() {
             >
               <CardMedia
                 component='img'
-                height={mobile ? '150' : '180'}
+                height={mobile ? '140' : '180'}
                 image='/hawk.png'
                 alt='Hawk-a-doc logo'
               />
-              <CardContent sx={{ display: 'flex', flexDirection: 'column', height: 300 }}>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
                 <List
                   dense
                   sx={{ listStyle: 'disc', pl: 4 }}

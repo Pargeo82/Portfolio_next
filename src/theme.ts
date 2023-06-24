@@ -48,4 +48,15 @@ theme.typography.h1 = {
   },
 };
 
+theme.typography.h4 = {
+  fontSize: '1.6rem',
+  fontWeight: 500,
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+  [theme.breakpoints.up('lg')]: {
+    fontSize: '2.2rem',
+  },
+};
+
 export default theme;

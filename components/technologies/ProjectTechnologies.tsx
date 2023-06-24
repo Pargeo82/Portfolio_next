@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Grid, Tooltip } from '@mui/material';
+import { Grid, Tooltip, useTheme, useMediaQuery } from '@mui/material';
 import { CSSProperties } from 'react';
 import { TechnoTypes } from '../../types/technoTypes';
 
@@ -12,6 +12,8 @@ type Props = {
 };
 
 const ProjectTechnologies = ({ technologies, xs, px = 1, spacing = 4, sx }: Props) => {
+  const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <Grid
       container
@@ -36,8 +38,8 @@ const ProjectTechnologies = ({ technologies, xs, px = 1, spacing = 4, sx }: Prop
                 <Image
                   src={`/technologies/${technology}.png`}
                   alt={technology}
-                  width={50}
-                  height={50}
+                  width={mobile ? 45 : 50}
+                  height={mobile ? 45 : 50}
                   layout='fixed'
                 />
               </span>
