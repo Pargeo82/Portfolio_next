@@ -15,12 +15,12 @@ const skills = [
   },
   {
     name: 'Problem solving',
-    description: `When you divide bigger problems, smaller ones don't seem as big`,
+    description: "When you divide bigger problems, smaller ones don't seem as big",
     image: '/problem.png',
   },
   {
     name: 'Teamwork',
-    description: `You can't grow without a team, everything is better and faster, and more fun in one`,
+    description: "You can't grow without a team, everything is better and faster, and more fun in one",
     image: '/teamwork.png',
   },
 ];

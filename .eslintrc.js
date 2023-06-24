@@ -29,7 +29,7 @@ module.exports = {
   rules: {
     //indent: ['error', 2, { SwitchCase: 1 }], Prettier and Eslint clash, so we disabled this line.
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'always'],
     'comma-dangle': ['error', 'only-multiline'],
     '@typescript-eslint/ban-ts-comment': 'off',

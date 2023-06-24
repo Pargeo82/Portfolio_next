@@ -28,6 +28,7 @@ export default function Cedeterija() {
               item
               xs={12}
               md={6}
+              key={index}
             >
               <Image
                 key={index}

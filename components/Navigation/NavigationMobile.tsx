@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
-
-import styles from './navigation.module.css';
-import Navlinks from './Navlinks';
 import { Stack } from '@mui/material';
+import Navlinks from './Navlinks';
 
 export default function NavigationMobile() {
   const [showNav, setShowNav] = useState<boolean>(false);
