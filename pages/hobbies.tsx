@@ -1,13 +1,11 @@
-import Navbar from '../components/Navigation/Navbar';
-import Hobbies from '../components/Hobbies/Hobbies';
+import { Grid, Typography } from '@mui/material';
+import HobbyCard from '../components/Hobbies/HobbyCard';
 import hobbiesData from '../components/Hobbies/hobbies_data';
-import Footer from '../components/Footer/Footer';
-import styles from '../components/Hobbies/hobbies.module.css';
 
-export default function HobbiesPage() {
+const HobbiesPage = () => {
   const hobbiesElements = hobbiesData.map((hobby) => {
     return (
-      <Hobbies
+      <HobbyCard
         key={hobby.id}
         image={hobby.image}
         name={hobby.name}
@@ -16,11 +14,22 @@ export default function HobbiesPage() {
     );
   });
   return (
-    <div className='content'>
-      <div className='container'>
-        <h1 className={`h1-title, ${styles.main}`}>Hobbies</h1>
-        <div className='flex'>{hobbiesElements}</div>
-      </div>
-    </div>
+    <>
+      <Typography
+        variant='h2'
+        gutterBottom
+      >
+        Hobbies
+      </Typography>
+      <Grid
+        container
+        spacing={4}
+        mb={16}
+      >
+        {hobbiesElements}
+      </Grid>
+    </>
   );
-}
+};
+
+export default HobbiesPage;

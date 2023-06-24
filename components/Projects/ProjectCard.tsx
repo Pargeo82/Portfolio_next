@@ -1,7 +1,6 @@
 import { CSSProperties } from 'react';
 import Link from 'next/link';
-import { Card, CardActionArea, CardMedia, Grid, Typography, alpha } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { Card, CardActionArea, CardMedia, Grid, Typography, alpha, useTheme } from '@mui/material';
 
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
