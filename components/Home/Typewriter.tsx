@@ -3,10 +3,9 @@ import Typewriter from 'typewriter-effect';
 
 export default function TypewriterEff() {
   return (
-    <Stack direction='row'>
+    <Stack direction={{ xs: 'column', sm: 'row' }}>
       <Typography
         variant='h4'
-        display='inline'
         gutterBottom
       >
         I&apos;m a junior{' '}

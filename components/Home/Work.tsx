@@ -1,4 +1,16 @@
-import { Box, Card, Grid, Stack, Typography, Link, List, ListItem, CardMedia, CardContent } from '@mui/material';
+import {
+  Box,
+  Card,
+  Grid,
+  Stack,
+  Typography,
+  Link,
+  List,
+  ListItem,
+  CardMedia,
+  CardContent,
+  useMediaQuery,
+} from '@mui/material';
 import Image from 'next/image';
 import { useTheme } from '@mui/material';
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
@@ -6,14 +18,14 @@ import { TechnoTypes } from '../../types/technoTypes';
 
 export default function Work() {
   const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down('md'));
   const primaryText = theme.palette.text.primary;
 
   return (
     <Box mb={10}>
       <Typography
-        variant='h3'
-        className='h1-title center'
-        mt={10}
+        variant='h4'
+        textAlign={'center'}
         mb={6}
         letterSpacing={2}
       >
@@ -21,11 +33,11 @@ export default function Work() {
       </Typography>
       <Stack direction={'column'}>
         <Stack
-          direction={'row'}
+          direction={{ xs: 'column', md: 'row' }}
           width={'100%'}
           mb={4}
         >
-          <Box width={'60%'}>
+          <Box width={{ xs: '100%', md: '60%' }}>
             <Typography
               variant='h6'
               gutterBottom
@@ -61,12 +73,14 @@ export default function Work() {
             rel='noreferrer'
             title='Atomic Intelligence'
           >
-            <Image
-              src='/atomicCopy.png'
-              alt='Atomic Intelligence'
-              width={400}
-              height={100}
-            />
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Image
+                src='/atomicCopy.png'
+                alt='Atomic Intelligence'
+                width={400}
+                height={100}
+              />
+            </div>
           </Link>
         </Stack>
         <Grid
@@ -84,7 +98,7 @@ export default function Work() {
             >
               <CardMedia
                 component='img'
-                height='194'
+                height={mobile ? '150' : '194'}
                 image='/PandaLogo.png'
                 alt='AI Panda logo'
               />
@@ -120,7 +134,7 @@ export default function Work() {
             >
               <CardMedia
                 component='img'
-                height='194'
+                height={mobile ? '150' : '194'}
                 image='/hawk.png'
                 alt='Hawk-a-doc logo'
               />
@@ -141,7 +155,6 @@ export default function Work() {
                       TechnoTypes.Redux,
                       TechnoTypes.TypeScript,
                     ]}
-                    px={6}
                   />
                 </Box>
               </CardContent>
@@ -150,26 +163,5 @@ export default function Work() {
         </Grid>
       </Stack>
     </Box>
-
-    //       <h3>AI Panda project</h3>
-    //       <ul>
-    //         <li>B2B application</li>
-    //         <li>AI solution for data manipulation and transformation</li>
-    //         <li>
-    //           detection and classification of personal and sensitive information
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div className={styles.images}>
-    //       <Image
-    //         className={styles.workCard}
-    //         src="/PandaLogo.png"
-    //         alt="AI Panda logo"
-    //         width={400}
-    //         height={133}
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
   );
 }

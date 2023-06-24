@@ -29,8 +29,8 @@ export default function Skills() {
   return (
     <Box mb={16}>
       <Typography
-        variant='h3'
-        className='h1-title center'
+        variant='h4'
+        textAlign={'center'}
         mb={6}
         letterSpacing={2}
       >
@@ -39,8 +39,7 @@ export default function Skills() {
       <Grid
         container
         rowSpacing={4}
-        justifyContent='center'
-        alignItems='flex-start'
+        width={'100%'}
       >
         {skills.map((skill, index) => (
           <Grid
@@ -50,12 +49,14 @@ export default function Skills() {
             md={3}
             key={index}
           >
-            <Image
-              src={skill.image}
-              alt={skill.name}
-              width={200}
-              height={200}
-            />
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Image
+                src={skill.image}
+                alt={skill.name}
+                width={200}
+                height={200}
+              />
+            </div>
             <Typography
               variant='h4'
               mt={4}

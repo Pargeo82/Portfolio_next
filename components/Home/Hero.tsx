@@ -56,6 +56,7 @@ const Hero = () => {
           direction='row'
           spacing={4}
           mt={10}
+          justifyContent={{ xs: 'center', md: 'flex-start' }}
         >
           <Button
             variant='contained'

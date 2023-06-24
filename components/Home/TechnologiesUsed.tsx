@@ -35,9 +35,8 @@ const TechnologiesUsed = () => {
   return (
     <Box mb={16}>
       <Typography
-        variant='h3'
-        className='h1-title center'
-        mt={10}
+        variant='h4'
+        textAlign={'center'}
         mb={6}
         letterSpacing={2}
       >
