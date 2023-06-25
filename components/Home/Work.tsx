@@ -1,16 +1,4 @@
-import {
-  Box,
-  Card,
-  Grid,
-  Stack,
-  Typography,
-  Link,
-  List,
-  ListItem,
-  CardMedia,
-  CardContent,
-  useMediaQuery,
-} from '@mui/material';
+import { Box, Card, Grid, Stack, Typography, Link, List, ListItem, CardMedia, CardContent } from '@mui/material';
 import Image from 'next/image';
 import { useTheme } from '@mui/material';
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
@@ -18,7 +6,6 @@ import { TechnoTypes } from '../../types/technoTypes';
 
 export default function Work() {
   const theme = useTheme();
-  const mobile = useMediaQuery(theme.breakpoints.down('md'));
   const primaryText = theme.palette.text.primary;
 
   return (
@@ -96,12 +83,14 @@ export default function Work() {
               variant='elevation'
               elevation={2}
             >
-              <CardMedia
-                component='img'
-                height={mobile ? '140' : '180'}
-                image='/PandaLogo.png'
-                alt='AI Panda logo'
-              />
+              <CardMedia>
+                <Image
+                  src='/PandaLogo.png'
+                  alt='AI Panda logo'
+                  width={560}
+                  height={201}
+                />
+              </CardMedia>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
                 <List
                   dense
@@ -132,12 +121,14 @@ export default function Work() {
               variant='elevation'
               elevation={4}
             >
-              <CardMedia
-                component='img'
-                height={mobile ? '140' : '180'}
-                image='/hawk.png'
-                alt='Hawk-a-doc logo'
-              />
+              <CardMedia>
+                <Image
+                  src='/hawk.png'
+                  alt='Hawk-a-doc logo'
+                  width={560}
+                  height={201}
+                />
+              </CardMedia>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
                 <List
                   dense
