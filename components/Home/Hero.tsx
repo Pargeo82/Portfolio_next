@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Router from 'next/router';
 import TypewriterEff from './Typewriter';
 import { useTheme } from '@mui/material/styles';
+import PargeoPhoto from '../../public/Pargeo2.png';
 
 const Hero = () => {
   const theme = useTheme();
@@ -111,11 +112,15 @@ const Hero = () => {
       >
         <Box>
           <Image
-            src='/Pargeo2.png'
-            alt='me'
-            width={750}
-            height={931}
-            layout='responsive'
+            src={PargeoPhoto}
+            alt='Photo of me'
+            width={384}
+            height={473}
+            style={{ width: '100%', height: 'auto' }}
+            placeholder='blur'
+            priority
+            quality={100}
+            sizes='40vw'
           />
         </Box>
       </Grid>

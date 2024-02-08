@@ -26,7 +26,6 @@ const TechnologiesUsed = () => {
             alt={technology}
             width={mobile ? 45 : 50}
             height={mobile ? 45 : 50}
-            layout='fixed'
           />
           <Typography variant='h5'>{technology}</Typography>
         </Stack>

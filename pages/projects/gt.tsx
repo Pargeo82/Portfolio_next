@@ -1,14 +1,19 @@
 import Image from 'next/image';
 import { Typography, Grid, Stack } from '@mui/material';
 import { useTheme } from '@mui/material';
-import projectData from '../../components/Projects/projectData';
+import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
+import gt1 from '../../public/projects/gt1.png';
+import gt2 from '../../public/projects/gt2.png';
 
-export default function Cedeterija() {
+export default function Gt() {
   const theme = useTheme();
   const primaryText = theme.palette.text.primary;
-  const project = projectData.find((project) => project.name === 'GT');
+  const project: Project | undefined = projectData.find((project) => project.name === 'GT');
+  if (project) {
+    project.imageArray = [gt1, gt2];
+  }
   return (
     <>
       <Typography
@@ -29,14 +34,18 @@ export default function Cedeterija() {
               xs={12}
               md={6}
               key={index}
+              display='flex'
+              alignItems='flex-start'
             >
               <Image
                 key={index}
                 src={image}
                 alt={project.name}
-                width={744}
-                height={968}
-                layout='responsive'
+                width={560}
+                height={727}
+                style={{ objectFit: 'contain', width: '100%', height: 'auto', alignSelf: 'flex-start' }}
+                sizes='50vw'
+                placeholder='blur'
               />
             </Grid>
           );

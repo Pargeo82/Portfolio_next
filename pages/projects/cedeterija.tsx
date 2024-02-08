@@ -1,15 +1,20 @@
 import Image from 'next/image';
 import { Typography, Grid, Stack } from '@mui/material';
 import { useTheme } from '@mui/material';
-import projectData from '../../components/Projects/projectData';
+import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
 import { GitHub } from '@mui/icons-material';
+import cedeterija1 from '../../public/projects/cedeterija2.png';
+import cedeterija2 from '../../public/projects/cedeterija3.png';
 
 export default function Cedeterija() {
   const theme = useTheme();
   const primaryText = theme.palette.text.primary;
-  const project = projectData.find((project) => project.name === 'Cedeterija');
+  const project: Project | undefined = projectData.find((project) => project.name === 'Cedeterija');
+  if (project) {
+    project.imageArray = [cedeterija1, cedeterija2];
+  }
   return (
     <>
       <Typography
@@ -30,14 +35,18 @@ export default function Cedeterija() {
               xs={12}
               md={6}
               key={index}
+              alignItems='flex-start'
+              sx={{ display: 'flex' }}
             >
               <Image
                 key={index}
                 src={image}
                 alt={project.name}
-                width={768}
-                height={400}
-                layout='responsive'
+                width={560}
+                height={280}
+                style={{ objectFit: 'contain', width: '100%', height: 'auto', alignSelf: 'flex-start' }}
+                sizes='50vw'
+                placeholder='blur'
               />
             </Grid>
           );

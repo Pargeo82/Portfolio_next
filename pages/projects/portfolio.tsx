@@ -1,15 +1,20 @@
 import Image from 'next/image';
 import { Typography, Grid, Stack } from '@mui/material';
 import { useTheme } from '@mui/material';
-import projectData from '../../components/Projects/projectData';
+import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
 import { GitHub } from '@mui/icons-material';
+import portfolio1 from '../../public/projects/portfolio.jpg';
+import portfolio2 from '../../public/projects/portfolio2.png';
 
-export default function Cedeterija() {
+export default function Portfolio() {
   const theme = useTheme();
   const primaryText = theme.palette.text.primary;
-  const project = projectData.find((project) => project.name === 'Portfolio');
+  const project: Project | undefined = projectData.find((project) => project.name === 'Portfolio');
+  if (project) {
+    project.imageArray = [portfolio1, portfolio2];
+  }
   return (
     <>
       <Typography
@@ -37,7 +42,9 @@ export default function Cedeterija() {
                 alt={project.name}
                 width={768}
                 height={400}
-                layout='responsive'
+                style={{ objectFit: 'contain', width: '100%', height: 'auto', alignSelf: 'flex-start' }}
+                sizes='50vw'
+                placeholder='blur'
               />
             </Grid>
           );

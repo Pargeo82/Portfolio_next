@@ -29,7 +29,6 @@ const NavigationMobile = () => {
           alt='Small me'
           width={40}
           height={40}
-          layout='fixed'
           style={{ borderRadius: '50%' }}
         />
 
@@ -39,7 +38,6 @@ const NavigationMobile = () => {
             alt='Menu'
             width={40}
             height={40}
-            layout='fixed'
           />
         </div>
       </Stack>

@@ -40,7 +40,6 @@ const ProjectTechnologies = ({ technologies, xs, px = 1, spacing = 4, sx }: Prop
                   alt={technology}
                   width={mobile ? 45 : 50}
                   height={mobile ? 45 : 50}
-                  layout='fixed'
                 />
               </span>
             </Tooltip>

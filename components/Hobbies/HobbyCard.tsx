@@ -15,23 +15,39 @@ const HobbyCard = (props: HobbiesProps) => {
     <Grid
       item
       xs={12}
-      sm={6}
+      md={6}
+      sx={{ display: 'flex' }}
     >
       <Card
         variant='elevation'
         elevation={4}
-        sx={{ border: `1px solid ${primaryAlpha}`, height: '100%' }}
+        sx={{
+          border: `1px solid ${primaryAlpha}`,
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+        }}
       >
-        <CardMedia>
+        <CardMedia sx={{ height: { xs: '75%', lg: '80%' } }}>
           <Image
             src={`/${props.image}`}
             alt='{props.name}'
-            width={400}
-            height={300}
-            layout='responsive'
+            width={560}
+            height={450}
+            sizes='(min-width: 1280px) 558px, (min-width: 600px) calc(45.45vw - 15px), calc(100vw - 34px)'
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
         </CardMedia>
-        <CardContent>
+        <CardContent
+          sx={{
+            height: { xs: '25%', lg: '20%' },
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'start',
+            justifyContent: 'flex-start',
+          }}
+        >
           <Typography variant='h6'>{props.name}</Typography>
           <Typography variant='body1'>{props.description}</Typography>
         </CardContent>
