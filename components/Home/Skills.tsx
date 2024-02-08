@@ -49,14 +49,14 @@ export default function Skills() {
             md={3}
             key={index}
           >
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Image
-                src={skill.image}
-                alt={skill.name}
-                width={200}
-                height={200}
-              />
-            </div>
+            <Image
+              src={skill.image}
+              alt={skill.name}
+              width={200}
+              height={200}
+              style={{ width: '100%', height: '200px', objectFit: 'contain' }}
+              sizes='50vw'
+            />
             <Typography
               variant='h4'
               mt={4}

@@ -63,7 +63,6 @@ const ProjectCard = (props: Props) => {
           <a
             href={props.link}
             target='_blank'
-            rel='noreferrer noopener'
             style={{ textDecoration: 'none' }}
           >
             {cardActionArea}

@@ -1,5 +1,5 @@
 import { Typography, Stack, useTheme, IconButton } from '@mui/material';
-import { GitHub, LinkedIn, Twitter, Email } from '@mui/icons-material';
+import { GitHub, LinkedIn, X, Email } from '@mui/icons-material';
 import Router from 'next/router';
 
 const Footer = () => {
@@ -28,10 +28,10 @@ const Footer = () => {
           href='https://twitter.com/MislavMarkusic'
           target='_blank'
           rel='noreferrer'
-          title='twitter link'
+          title='x link'
           style={{ color: primaryText }}
         >
-          <Twitter sx={{ fontSize: 40 }} />
+          <X sx={{ fontSize: 40 }} />
         </a>
         <a
           href='https://github.com/Pargeo82'

@@ -12,7 +12,7 @@ export default function Homepage() {
         <title>Pargeo Portfolio</title>
         <meta
           name='description'
-          content='Portfolio page for a junior developer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB'
+          content='Portfolio page for a junior frontend developer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB'
         />
       </Head>
       <Hero />

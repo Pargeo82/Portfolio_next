@@ -35,7 +35,7 @@ const HobbyCard = (props: HobbiesProps) => {
             alt='{props.name}'
             width={560}
             height={450}
-            sizes='(min-width: 1280px) 558px, (min-width: 600px) calc(45.45vw - 15px), calc(100vw - 34px)'
+            sizes='(min-width: 1280px) 558px, (min-width: 900px) calc(41.67vw + 33px), calc(97.24vw - 26px)'
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />
         </CardMedia>
