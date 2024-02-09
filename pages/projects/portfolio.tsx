@@ -5,7 +5,7 @@ import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
 import { GitHub } from '@mui/icons-material';
-import portfolio1 from '../../public/projects/portfolio.jpg';
+import portfolio1 from '../../public/projects/portfolio1.jpg';
 import portfolio2 from '../../public/projects/portfolio2.png';
 
 export default function Portfolio() {
