@@ -20,6 +20,20 @@ export type Project = {
 const projectData = [
   {
     id: 1,
+    name: 'Mai beauty salon',
+    image: 'projects/mai1.png',
+    title: 'Beauty salon website',
+    description: 'Local small business, just opened',
+    technology: [TechnoTypes.TypeScript, TechnoTypes.NextJS, TechnoTypes.Figma, TechnoTypes.MaterialUI],
+    link: 'mai',
+    outsideLink: false,
+    longerDescription:
+      'Website for a local small business that has just opened. Project has been fully designed in figma, then made in NextJS 14 (new image component and router). It has been made with TypeScript, and MaterialUI. It is fully responsive and has been tested on multiple devices and browsers. It has been made with SEO in mind, and has been tested with google crawler. It has been deployed on Vercel.',
+    linkTitle: 'Beauty salon Mai',
+    url: 'https://www.ks-mai.hr/',
+  },
+  {
+    id: 2,
     name: 'Cedeterija',
     image: 'projects/cedeterija.png',
     title: 'Discogs album fetcher',
@@ -34,7 +48,7 @@ const projectData = [
     gitUrl: 'https://github.com/Pargeo82/cedeterija',
   },
   {
-    id: 2,
+    id: 3,
     name: 'GT',
     image: 'projects/projectGt.png',
     title: 'Bar online menu',
@@ -48,7 +62,7 @@ const projectData = [
     url: 'https://www.caffebargt-martinko.hr/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Portfolio',
     image: 'projects/portfolio.jpg',
     title: 'Portofolio site',
