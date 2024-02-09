@@ -5,6 +5,7 @@ import Router from 'next/router';
 import TypewriterEff from './Typewriter';
 import { useTheme } from '@mui/material/styles';
 import PargeoPhoto from '../../public/Pargeo2.png';
+import Link from 'next/link';
 
 const Hero = () => {
   const theme = useTheme();
@@ -81,7 +82,7 @@ const Hero = () => {
             endIcon={<Download sx={{ color: primaryText }} />}
             aria-label='Download CV'
           >
-            <a
+            <Link
               href='./Mislav_Markusic_CV.pdf'
               download='Mislav_Markusic_CV.pdf'
               target='_blank'
@@ -101,14 +102,25 @@ const Hero = () => {
               >
                 Download CV
               </Typography>
-            </a>
+            </Link>
           </Button>
         </Stack>
+        <Typography
+          variant='body1'
+          mt={8}
+          width={{ xs: '100%', md: '80%' }}
+          align='justify'
+        >
+          I am a junior frontend developer with a passion for web development and design. I have been working as a react
+          developer for the past year and a half, and have finished a course in UX/UI design at Algebra in the meantime,
+          with having a special interest in designing in Figma. I am always looking for new challenges and opportunities
+          to grow and learn new things.
+        </Typography>
       </Grid>
       <Grid
         item
-        xs={0}
         md={4}
+        sx={{ display: { xs: 'none', md: 'flex' } }}
       >
         <Box>
           <Image
@@ -120,7 +132,7 @@ const Hero = () => {
             placeholder='blur'
             priority
             quality={100}
-            sizes='40vw'
+            sizes='(min-width: 1280px) 384px, (min-width: 900px) calc(27.78vw + 34px), 40vw'
           />
         </Box>
       </Grid>

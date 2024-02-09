@@ -29,7 +29,7 @@ const HobbyCard = (props: HobbiesProps) => {
           flexDirection: 'column',
         }}
       >
-        <CardMedia sx={{ height: { xs: '75%', lg: '80%' } }}>
+        <CardMedia sx={{ height: { xs: '70%', lg: '75%' } }}>
           <Image
             src={`/${props.image}`}
             alt='{props.name}'
@@ -41,7 +41,7 @@ const HobbyCard = (props: HobbiesProps) => {
         </CardMedia>
         <CardContent
           sx={{
-            height: { xs: '25%', lg: '20%' },
+            height: { xs: '30%', lg: '25%' },
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'start',

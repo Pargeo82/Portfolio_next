@@ -34,16 +34,8 @@ export default function ProjectsPage() {
         rowSpacing={4}
       >
         {projectElements}
-      </Grid>
-      <Grid
-        container
-        width={'100%'}
-        mb={{ xs: 4, md: 8 }}
-        columnSpacing={{ xs: 0, md: 4 }}
-        rowSpacing={4}
-      >
         <ProjectCard
-          image={'projects/blog.jpg'}
+          image={'projects/blog.png'}
           name={'Blog'}
           title={'Blog'}
           description={'Blogging about my coding journey and roadblocks I encounter'}

@@ -60,14 +60,14 @@ export default function Work() {
             rel='noreferrer'
             title='Atomic Intelligence'
           >
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <Image
-                src='/atomicCopy.png'
-                alt='Atomic Intelligence'
-                width={400}
-                height={100}
-              />
-            </div>
+            <Image
+              src='/atomicCopy.png'
+              alt='Atomic Intelligence'
+              width={400}
+              height={100}
+              sizes='(max-width: 400px) 100vw, 400px'
+              style={{ width: '100%', height: 'auto' }}
+            />
           </Link>
         </Stack>
         <Grid
@@ -87,8 +87,10 @@ export default function Work() {
                 <Image
                   src='/PandaLogo.png'
                   alt='AI Panda logo'
-                  width={560}
-                  height={201}
+                  width={740}
+                  height={266}
+                  sizes='(max-width: 400px) 100vw, 400px'
+                  style={{ width: '100%', height: 'auto' }}
                 />
               </CardMedia>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
@@ -125,8 +127,10 @@ export default function Work() {
                 <Image
                   src='/hawk.png'
                   alt='Hawk-a-doc logo'
-                  width={560}
-                  height={201}
+                  width={740}
+                  height={266}
+                  sizes='(max-width: 400px) 100vw, 400px'
+                  style={{ width: '100%', height: 'auto' }}
                 />
               </CardMedia>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>

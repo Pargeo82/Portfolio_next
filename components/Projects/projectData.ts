@@ -35,7 +35,7 @@ const projectData = [
   {
     id: 2,
     name: 'Cedeterija',
-    image: 'projects/cedeterija.png',
+    image: 'projects/cedeterija1.png',
     title: 'Discogs album fetcher',
     description: 'Data fetcher from discogs API, to input data into POS database',
     technology: [TechnoTypes.TypeScript, TechnoTypes.CSS, TechnoTypes.NextJS],
@@ -50,7 +50,7 @@ const projectData = [
   {
     id: 3,
     name: 'GT',
-    image: 'projects/projectGt.png',
+    image: 'projects/gt1.png',
     title: 'Bar online menu',
     description: 'Mobile-first online menu for a bar',
     technology: [TechnoTypes.CSS, TechnoTypes.MongoDB, TechnoTypes.NextJS],
@@ -64,7 +64,7 @@ const projectData = [
   {
     id: 4,
     name: 'Portfolio',
-    image: 'projects/portfolio.jpg',
+    image: 'projects/portfolio1.png',
     title: 'Portofolio site',
     description: 'Latest iteration done with TypeScript, MUI and NextJS',
     technology: [TechnoTypes.TypeScript, TechnoTypes.MaterialUI, TechnoTypes.NextJS],

@@ -1,9 +1,10 @@
 import { CSSProperties } from 'react';
 import Link from 'next/link';
-import { Card, CardActionArea, CardMedia, Grid, Typography, alpha, useTheme } from '@mui/material';
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography, alpha, useTheme } from '@mui/material';
 
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
+import Image from 'next/image';
 
 type Props = {
   image: string;
@@ -24,26 +25,33 @@ const ProjectCard = (props: Props) => {
 
   const cardActionArea = (
     <CardActionArea>
-      <CardMedia
-        component='img'
-        image={`/${props.image}`}
-        alt={props.title}
-      />
-      <Typography
-        variant='h5'
-        color={primary}
-        m={2}
-      >
-        {props.title}
-      </Typography>
-      {props.technology && <ProjectTechnologies technologies={[...props.technology] as TechnoTypes[]} />}
-      <Typography
-        variant='body1'
-        m={2}
-        sx={{ color: primaryText }}
-      >
-        {props.description}
-      </Typography>
+      <CardMedia sx={{ height: { xs: '75%', lg: '80%' } }}>
+        <Image
+          src={`/${props.image}`}
+          alt={props.title}
+          width={830}
+          height={467}
+          sizes='(min-width: 1280px) 558px, (min-width: 900px) calc(41.67vw + 33px), calc(97.24vw - 26px)'
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+        />
+      </CardMedia>
+      <CardContent sx={{ height: { xs: '25%', lg: '20%' } }}>
+        <Typography
+          variant='h5'
+          color={primary}
+          m={2}
+        >
+          {props.title}
+        </Typography>
+        {props.technology && <ProjectTechnologies technologies={[...props.technology] as TechnoTypes[]} />}
+        <Typography
+          variant='body1'
+          m={2}
+          sx={{ color: primaryText }}
+        >
+          {props.description}
+        </Typography>
+      </CardContent>
     </CardActionArea>
   );
 
@@ -51,7 +59,7 @@ const ProjectCard = (props: Props) => {
     <Grid
       item
       xs={12}
-      md={4}
+      md={6}
       sx={{ ...props.sx }}
     >
       <Card
@@ -63,7 +71,6 @@ const ProjectCard = (props: Props) => {
           <a
             href={props.link}
             target='_blank'
-            style={{ textDecoration: 'none' }}
           >
             {cardActionArea}
           </a>

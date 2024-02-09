@@ -4,15 +4,15 @@ import { useTheme } from '@mui/material';
 import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
-import gt1 from '../../public/projects/gt1.png';
 import gt2 from '../../public/projects/gt2.png';
+import gt3 from '../../public/projects/gt3.png';
 
 export default function Gt() {
   const theme = useTheme();
   const primaryText = theme.palette.text.primary;
   const project: Project | undefined = projectData.find((project) => project.name === 'GT');
   if (project) {
-    project.imageArray = [gt1, gt2];
+    project.imageArray = [gt2, gt3];
   }
   return (
     <>

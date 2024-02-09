@@ -16,8 +16,8 @@ export default function Homepage() {
         />
       </Head>
       <Hero />
-      <Skills />
       <TechnologiesUsed />
+      <Skills />
       <Work />
       {/* <GitHubCalendar username="pargeo82" weekStart={1} /> */}
     </>
