@@ -31,8 +31,6 @@ const ProjectTechnologies = ({ technologies, xs, px = 1, spacing = 4, sx }: Prop
             <Tooltip
               title={technology}
               placement='top'
-              arrow
-              followCursor
             >
               <span>
                 <Image

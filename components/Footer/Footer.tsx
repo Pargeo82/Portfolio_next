@@ -1,4 +1,4 @@
-import { Typography, Stack, useTheme, IconButton } from '@mui/material';
+import { Typography, Stack, useTheme, IconButton, Tooltip } from '@mui/material';
 import { GitHub, LinkedIn, X, MailOutlineOutlined } from '@mui/icons-material';
 import Router from 'next/router';
 import Link from 'next/link';
@@ -20,35 +20,55 @@ const Footer = () => {
           href='https://www.linkedin.com/in/mislav-markusic/'
           target='_blank'
           rel='noreferrer'
-          title='linkedin link'
           style={{ color: primaryText, height: '35px' }}
+          aria-label='Linkedin link'
         >
-          <LinkedIn fontSize='large' />
+          <Tooltip
+            title='Linkedin link'
+            placement='top'
+          >
+            <LinkedIn fontSize='large' />
+          </Tooltip>
         </Link>
         <Link
           href='https://twitter.com/MislavMarkusic'
           target='_blank'
           rel='noreferrer'
-          title='x link'
           style={{ color: primaryText, height: '35px' }}
+          aria-label='X link'
         >
-          <X fontSize='large' />
+          <Tooltip
+            title='X link'
+            placement='top'
+          >
+            <X fontSize='large' />
+          </Tooltip>
         </Link>
         <Link
           href='https://github.com/Pargeo82'
           target='_blank'
           rel='noreferrer'
-          title='github link'
           style={{ color: primaryText, height: '35px' }}
+          aria-label='Github link'
         >
-          <GitHub fontSize='large' />
+          <Tooltip
+            title='Github link'
+            placement='top'
+          >
+            <GitHub fontSize='large' />
+          </Tooltip>
         </Link>
         <IconButton
           onClick={() => Router.push('mailto:pargeo82@gmail.com')}
           aria-label='Email me'
           sx={{ color: primaryText, height: '35px', p: 0, alignItems: 'center' }}
         >
-          <MailOutlineOutlined fontSize='large' />
+          <Tooltip
+            title='Email me'
+            placement='top'
+          >
+            <MailOutlineOutlined fontSize='large' />
+          </Tooltip>
         </IconButton>
       </Stack>
       <Typography
