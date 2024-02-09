@@ -9,6 +9,7 @@ import createEmotionCache from '../src/createEmotionCache';
 import '../styles/globals.css';
 import Layout from '../components/Layout/Layout';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -59,6 +60,7 @@ export default function MyApp(props: MyAppProps) {
           <Layout>
             <Component {...pageProps} />
             <Analytics />
+            <SpeedInsights />
           </Layout>
         </ThemeProvider>
       </CacheProvider>
