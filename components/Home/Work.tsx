@@ -65,7 +65,7 @@ export default function Work() {
               alt='Atomic Intelligence'
               width={400}
               height={100}
-              sizes='(max-width: 400px) 100vw, 400px'
+              sizes='(min-width: 1600px) 400px, (min-width: 900px) calc(3.82vw + 340px), calc(97.24vw - 24px)'
               style={{ width: '100%', height: 'auto' }}
             />
           </Link>
@@ -89,7 +89,7 @@ export default function Work() {
                   alt='AI Panda logo'
                   width={740}
                   height={266}
-                  sizes='(max-width: 400px) 100vw, 400px'
+                  sizes='(min-width: 1280px) 560px, (min-width: 900px) calc(41.67vw + 35px), calc(97.24vw - 24px)'
                   style={{ width: '100%', height: 'auto' }}
                 />
               </CardMedia>
@@ -129,7 +129,7 @@ export default function Work() {
                   alt='Hawk-a-doc logo'
                   width={740}
                   height={266}
-                  sizes='(max-width: 400px) 100vw, 400px'
+                  sizes='(min-width: 1280px) 560px, (min-width: 900px) calc(41.67vw + 35px), calc(97.24vw - 24px)'
                   style={{ width: '100%', height: 'auto' }}
                 />
               </CardMedia>

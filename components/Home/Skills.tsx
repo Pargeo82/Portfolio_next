@@ -55,7 +55,7 @@ export default function Skills() {
               width={200}
               height={200}
               style={{ width: '100%', height: '200px', objectFit: 'contain' }}
-              sizes='50vw'
+              sizes='(min-width: 1280px) 288px, (min-width: 900px) calc(20.83vw + 26px), (min-width: 600px) calc(50vw - 24px), calc(100vw - 32px)'
             />
             <Typography
               variant='h4'

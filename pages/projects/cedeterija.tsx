@@ -45,7 +45,7 @@ export default function Cedeterija() {
                 width={560}
                 height={280}
                 style={{ objectFit: 'contain', width: '100%', height: 'auto', alignSelf: 'flex-start' }}
-                sizes='50vw'
+                sizes='(min-width: 1280px) 560px, (min-width: 900px) calc(41.67vw + 35px), calc(97.24vw - 24px)'
                 placeholder='blur'
               />
             </Grid>
