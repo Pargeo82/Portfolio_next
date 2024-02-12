@@ -29,8 +29,12 @@ export default function MyApp(props: MyAppProps) {
         />
         <meta
           name='description'
-          content='Portfolio page for a junior developer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB etc. '
+          content='Portfolio page for a frontend developer & ux/ui designer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB etc. '
         />
+        <meta
+          name='twitter:card'
+          content='Portfolio page for a frontend developer & ux/ui designer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB etc.'
+        ></meta>
         <link
           rel='apple-touch-icon'
           sizes='180x180'
