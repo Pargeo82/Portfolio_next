@@ -61,6 +61,7 @@ const DualGitHubCalendars = () => {
               setTotalContributions2(calendarContributions);
               return data;
             }}
+            style={{}}
             hideTotalCount={true}
             hideColorLegend={true}
           />

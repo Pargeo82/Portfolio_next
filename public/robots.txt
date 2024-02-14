@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.pargeo.com.hr
+
+# Sitemaps
+Sitemap: https://www.pargeo.com.hr/sitemap.xml
