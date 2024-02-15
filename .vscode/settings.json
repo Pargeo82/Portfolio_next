@@ -18,5 +18,33 @@
     "titleBar.inactiveBackground": "#ff773699",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#ff7736"
+  "peacock.color": "#ff7736",
+  "cSpell.words": [
+    "barcodes",
+    "bootcamp",
+    "Bootcamp",
+    "Codevolution",
+    "Coursera",
+    "Discogs",
+    "Ferreira",
+    "Filho",
+    "frontmatter",
+    "Grider",
+    "Hanselman's",
+    "Hanselminutes",
+    "Haverbeke",
+    "Kanat",
+    "Krug",
+    "Lindley",
+    "Marijn",
+    "Markušić",
+    "Mislav",
+    "Pargeo",
+    "Scrimba",
+    "Udemy",
+    "unpushed",
+    "Vercel",
+    "Wladston",
+    "Ziroll"
+  ]
 }
