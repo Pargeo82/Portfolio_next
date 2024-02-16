@@ -29,7 +29,7 @@ export const getArticleFromSlug = async (slug) => {
     content,
     frontmatter: {
       slug,
-      excerpt: data.excerpt,
+      excerpt: data.excerpt || '',
       title: data.title,
       publishedAt: data.publishedAt,
       readingTime: readingTime(source).text,

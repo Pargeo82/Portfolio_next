@@ -71,6 +71,26 @@ const Navlinks = ({ onNavToggle }: NavlinksProps) => {
           </Typography>
         </Link>{' '}
         <Link
+          href='/blog'
+          aria-label='Blog link'
+        >
+          <Typography
+            onClick={handleLinkClick}
+            variant='h6'
+            fontWeight={700}
+            sx={{
+              color: currentRoute === '/blog' ? primary : primaryText,
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+                cursor: 'pointer',
+              },
+            }}
+          >
+            Blog
+          </Typography>
+        </Link>{' '}
+        <Link
           href='/hobbies'
           aria-label='Hobbies link'
         >

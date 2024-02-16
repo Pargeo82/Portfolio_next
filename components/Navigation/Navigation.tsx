@@ -8,7 +8,7 @@ const Navigation = () => {
         width: '100%',
         top: 0,
         zIndex: 100,
-        backdropFilter: 'blur(10px)',
+        backdropFilter: 'blur(15px)',
       }}
     >
       <Navlinks />

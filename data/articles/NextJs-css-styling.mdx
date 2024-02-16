@@ -1,0 +1,36 @@
+---
+title: 'Next.js CSS Styling: Combining Global & Module Styles'
+publishedAt: '2023-02-11'
+excerpt: ''
+cover_image: '/posts/Roadmap.png'
+---
+
+When optimizing your NextJS website for search engines, seamlessly integrating global and module CSS styles is essential. Here's how to achieve it without relying on additional packages.
+
+Begin by incorporating global styles into your pages/app.js:
+
+```js
+import 'styles.css';
+```
+
+Next, within your component, import module-specific styles:
+
+```js
+import styles from './something.module.css';
+```
+
+To combine global and module styles for a specific element, follow either of these two approaches:
+
+- Utilize template literals to concatenate class names:
+
+```js
+<div className={`left ${styles.right}`}></div>
+```
+
+- Merge class names using the Array.join() method:
+
+```js
+<div className={['left', styles.right].join(' ')}></div>
+```
+
+By seamlessly integrating global and module CSS styles in NextJS, you enhance the SEO performance of your website without the need for additional dependencies.
