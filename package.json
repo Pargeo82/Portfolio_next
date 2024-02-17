@@ -1,12 +1,13 @@
 {
   "name": "pargeo",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -20,6 +21,7 @@
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.9",
     "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
     "glob": "^10.3.10",
     "gray-matter": "^4.0.3",
     "mui-markdown": "^1.1.13",
@@ -30,6 +32,7 @@
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.3.3",
     "reading-time": "^1.5.0",
+    "sharp": "^0.33.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
