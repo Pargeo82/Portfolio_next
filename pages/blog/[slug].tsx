@@ -1,10 +1,10 @@
 import { getArticleFromSlug, getSlug } from '../../src/utils/mdx';
-import { Typography, Box, Grid, Button } from '@mui/material';
+import { Typography, Box, Grid, Button, useTheme } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Image from 'next/image';
-import MuiMarkdown from 'mui-markdown';
-import { Highlight, themes } from 'prism-react-renderer';
 import Link from 'next/link';
+import { MuiMarkdown, getOverrides } from 'mui-markdown';
+import { Highlight, themes } from 'prism-react-renderer';
 
 export const getStaticPaths = async () => {
   const paths = (await getSlug()).map((slug) => ({ params: { slug } }));
@@ -31,6 +31,9 @@ export const getStaticProps = async ({ params }) => {
 
 const Blog = ({ post }) => {
   const { content, frontmatter } = post;
+  const theme = useTheme();
+
+  console.log(Highlight, themes, theme);
 
   return (
     <Box minHeight={'calc(100vh - 250px)'}>
@@ -85,9 +88,15 @@ const Blog = ({ post }) => {
       </Grid>
       <Box mb={8}>
         <MuiMarkdown
-          Highlight={Highlight}
-          themes={themes}
-          prismTheme={themes.duotoneDark}
+          overrides={{
+            ...getOverrides({ Highlight, themes, theme: themes.duotoneDark, hideLineNumbers: true }),
+            a: {
+              component: 'a',
+              props: {
+                style: { color: theme.palette.primary.main },
+              },
+            },
+          }}
         >
           {content}
         </MuiMarkdown>

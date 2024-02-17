@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Typography, Grid, Stack } from '@mui/material';
+import { Typography, Grid, Stack, Button } from '@mui/material';
 import { useTheme } from '@mui/material';
 import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
@@ -7,6 +7,8 @@ import { TechnoTypes } from '../../types/technoTypes';
 import { GitHub } from '@mui/icons-material';
 import cedeterija1 from '../../public/projects/cedeterija2.png';
 import cedeterija2 from '../../public/projects/cedeterija3.png';
+import Link from 'next/link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 export default function Cedeterija() {
   const theme = useTheme();
@@ -83,7 +85,7 @@ export default function Cedeterija() {
       </Typography>
       <Stack mb={12}>
         {project?.url && (
-          <a
+          <Link
             href={project?.url}
             target='_blank'
             rel='noreferrer noopener'
@@ -92,13 +94,14 @@ export default function Cedeterija() {
             <Typography
               variant='body1'
               gutterBottom
+              color={'primary'}
             >
               {project.linkTitle}
             </Typography>
-          </a>
+          </Link>
         )}
         {project?.gitUrl && (
-          <a
+          <Link
             href={project?.gitUrl}
             target='_blank'
             rel='noreferrer noopener'
@@ -106,9 +109,19 @@ export default function Cedeterija() {
             style={{ color: primaryText }}
           >
             <GitHub sx={{ fontSize: 40 }} />
-          </a>
+          </Link>
         )}
       </Stack>
+      <Link href={'/projects'}>
+        <Button
+          variant='outlined'
+          size='large'
+          sx={{ mb: 8 }}
+        >
+          <ArrowBackIcon sx={{ mr: 2 }} />
+          Back to Projects
+        </Button>
+      </Link>
     </>
   );
 }

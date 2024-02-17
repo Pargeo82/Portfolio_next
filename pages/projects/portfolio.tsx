@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Typography, Grid, Stack } from '@mui/material';
+import { Typography, Grid, Stack, Button } from '@mui/material';
 import { useTheme } from '@mui/material';
 import projectData, { Project } from '../../components/Projects/projectData';
 import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
@@ -7,6 +7,8 @@ import { TechnoTypes } from '../../types/technoTypes';
 import { GitHub } from '@mui/icons-material';
 import portfolio1 from '../../public/projects/portfolio1.png';
 import portfolio2 from '../../public/projects/portfolio2.png';
+import Link from 'next/link';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 export default function Portfolio() {
   const theme = useTheme();
@@ -81,7 +83,7 @@ export default function Portfolio() {
       </Typography>
       <Stack mb={12}>
         {project?.gitUrl && (
-          <a
+          <Link
             href={project?.gitUrl}
             target='_blank'
             rel='noreferrer noopener'
@@ -89,9 +91,19 @@ export default function Portfolio() {
             style={{ color: primaryText }}
           >
             <GitHub sx={{ fontSize: 40 }} />
-          </a>
+          </Link>
         )}
       </Stack>
+      <Link href={'/projects'}>
+        <Button
+          variant='outlined'
+          size='large'
+          sx={{ mb: 8 }}
+        >
+          <ArrowBackIcon sx={{ mr: 2 }} />
+          Back to Projects
+        </Button>
+      </Link>
     </>
   );
 }

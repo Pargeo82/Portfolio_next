@@ -34,15 +34,6 @@ export default function ProjectsPage() {
         rowSpacing={4}
       >
         {projectElements}
-        <ProjectCard
-          image={'projects/blog.png'}
-          name={'Blog'}
-          title={'Blog'}
-          description={'Blogging about my coding journey and roadblocks I encounter'}
-          link={'https://pargeo.hashnode.dev/'}
-          outsideLink
-          sx={{ width: '100%' }}
-        />
       </Grid>
     </>
   );
