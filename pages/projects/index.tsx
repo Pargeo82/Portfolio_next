@@ -1,6 +1,6 @@
 import { Typography, Grid } from '@mui/material';
-import ProjectCard from '../../components/Projects/ProjectCard';
-import projectData from '../../components/Projects/projectData';
+import ProjectCard from '../../src/components/Projects/ProjectCard';
+import projectData from '../../src/components/Projects/projectData';
 
 export default function ProjectsPage() {
   const projectElements = projectData.map((project) => {

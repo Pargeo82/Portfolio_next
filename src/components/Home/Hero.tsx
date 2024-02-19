@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Router from 'next/router';
 import TypewriterEff from './Typewriter';
 import { useTheme } from '@mui/material/styles';
-import PargeoPhoto from '../../public/Pargeo2.png';
+import PargeoPhoto from '../../../public/Pargeo2.png';
 import Link from 'next/link';
 
 const Hero = () => {

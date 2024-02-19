@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { Typography, Grid, Stack, Button } from '@mui/material';
 import { useTheme } from '@mui/material';
-import projectData, { Project } from '../../components/Projects/projectData';
-import ProjectTechnologies from '../../components/technologies/ProjectTechnologies';
-import { TechnoTypes } from '../../types/technoTypes';
+import projectData, { Project } from '../../src/components/Projects/projectData';
+import ProjectTechnologies from '../../src/components/technologies/ProjectTechnologies';
+import { TechnoTypes } from '../../src/types/technoTypes';
 import gt2 from '../../public/projects/gt2.png';
 import gt3 from '../../public/projects/gt3.png';
 import Link from 'next/link';

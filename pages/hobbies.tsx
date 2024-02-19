@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
-import HobbyCard from '../components/Hobbies/HobbyCard';
-import hobbiesData from '../components/Hobbies/hobbies_data';
+import HobbyCard from '../src/components/Hobbies/HobbyCard';
+import hobbiesData from '../src/components/Hobbies/hobbies_data';
 
 const HobbiesPage = () => {
   const hobbiesElements = hobbiesData.map((hobby) => {

@@ -1,9 +1,9 @@
-import Skills from '../components/Home/Skills';
-import Work from '../components/Home/Work';
-import Hero from '../components/Home/Hero';
-import TechnologiesUsed from '../components/Home/TechnologiesUsed';
+import Skills from '../src/components/Home/Skills';
+import Work from '../src/components/Home/Work';
+import Hero from '../src/components/Home/Hero';
+import TechnologiesUsed from '../src/components/Home/TechnologiesUsed';
 import Head from 'next/head';
-import DualGitHubCalendars from '../components/Home/DualGitHubCalendars';
+import DualGitHubCalendars from '../src/components/Home/DualGitHubCalendars';
 
 export default function Homepage() {
   return (

@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import readingTime from 'reading-time';
 import { sync } from 'glob';
 
-const articlesPath = path.join(process.cwd(), 'data/articles');
+const articlesPath = path.join(process.cwd(), 'src/data/articles');
 
 export const getSlug = async () => {
   const paths = sync(`${articlesPath}/*.mdx`);
@@ -40,11 +40,11 @@ export const getArticleFromSlug = async (slug) => {
 };
 
 export const getAllArticles = async () => {
-  const articles = fs.readdirSync(path.join(process.cwd(), 'data/articles'));
+  const articles = fs.readdirSync(path.join(process.cwd(), 'src/data/articles'));
 
   return articles.reduce((allArticles: any[], articleSlug: string) => {
     // get parsed data from mdx files in the "articles" dir
-    const source = fs.readFileSync(path.join(process.cwd(), 'data/articles', articleSlug), 'utf-8');
+    const source = fs.readFileSync(path.join(process.cwd(), 'src/data/articles', articleSlug), 'utf-8');
     const { data } = matter(source);
 
     return [
