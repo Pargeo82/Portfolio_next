@@ -126,8 +126,8 @@ const Hero = () => {
           <Image
             src={PargeoPhoto}
             alt='Photo of me'
-            width={384}
-            height={473}
+            // width={384}
+            // height={473}
             style={{ width: '100%', height: 'auto' }}
             placeholder='blur'
             priority

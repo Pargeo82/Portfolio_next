@@ -27,7 +27,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <Box mb={16}>
+    <Box pb={16}>
       <Typography
         variant='h4'
         textAlign={'center'}
@@ -38,7 +38,7 @@ export default function Skills() {
       </Typography>
       <Grid
         container
-        rowSpacing={4}
+        spacing={2}
         width={'100%'}
       >
         {skills.map((skill, index) => (
@@ -52,9 +52,9 @@ export default function Skills() {
             <Image
               src={skill.image}
               alt={skill.name}
-              width={200}
-              height={200}
-              style={{ width: '100%', height: '200px', objectFit: 'contain' }}
+              width={585}
+              height={585}
+              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
               sizes='(min-width: 1280px) 288px, (min-width: 900px) calc(20.83vw + 26px), (min-width: 600px) calc(50vw - 24px), calc(100vw - 32px)'
             />
             <Typography

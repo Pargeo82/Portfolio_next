@@ -1,10 +1,54 @@
 import { Box, Typography } from '@mui/material';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import GitHubCalendar from 'react-github-calendar';
 
 const DualGitHubCalendars = () => {
-  const [totalContributions1, setTotalContributions1] = useState<number>(0);
-  const [totalContributions2, setTotalContributions2] = useState<number>(0);
+  const [combinedCalendarData, setCombinedCalendarData] = useState<any[]>([]);
+
+  useEffect(() => {
+    Promise.all([
+      fetch('https://github-contributions-api.jogruber.de/v4/Pargeo82?y=last').then((response) => response.json()),
+      fetch('https://github-contributions-api.jogruber.de/v4/Mislav-Markusic?y=last').then((response) =>
+        response.json(),
+      ),
+    ]).then(([user1Data, user2Data]) => {
+      const combinedData = combineCalendarData(user1Data.contributions, user2Data.contributions);
+      setCombinedCalendarData(combinedData);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const combineCalendarData = (data1, data2) => {
+    const combinedData = {};
+
+    data1.forEach((day) => {
+      combinedData[day.date] = (combinedData[day.date] || 0) + day.count;
+    });
+
+    data2.forEach((day) => {
+      combinedData[day.date] = (combinedData[day.date] || 0) + day.count;
+    });
+
+    return Object.keys(combinedData).map((date) => ({
+      date,
+      count: combinedData[date],
+      level: calculateLevel(combinedData[date]),
+    }));
+  };
+
+  const calculateLevel = (count) => {
+    if (count === 0) {
+      return 0;
+    } else if (count >= 1 && count <= 2) {
+      return 1;
+    } else if (count >= 3 && count <= 4) {
+      return 2;
+    } else if (count >= 5 && count <= 6) {
+      return 3;
+    } else {
+      return 4;
+    }
+  };
 
   return (
     <>
@@ -14,8 +58,8 @@ const DualGitHubCalendars = () => {
       >
         Combined work and private calendar
       </Typography>
-      <Box sx={{ position: 'relative', height: '200px', mb: 4 }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1 }}>
+      <Box sx={{ height: '200px', mb: 4 }}>
+        {combinedCalendarData && combinedCalendarData.length > 0 && (
           <GitHubCalendar
             username='Mislav-Markusic'
             blockSize={18}
@@ -25,47 +69,12 @@ const DualGitHubCalendars = () => {
               level3: '#26a641',
               level2: '#006d32',
               level1: '#0e4429',
-              level0: 'transparent',
-            }}
-            transformData={(data) => {
-              let calendarContributions = 0;
-              data.forEach((day) => {
-                calendarContributions += day.count;
-              });
-              setTotalContributions1(calendarContributions);
-              return data;
-            }}
-            weekStart={1}
-            transformTotalCount
-            totalCount={totalContributions1 + totalContributions2}
-          />
-        </div>
-        <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}>
-          <GitHubCalendar
-            username='Pargeo82'
-            blockSize={18}
-            blockMargin={4}
-            weekStart={1}
-            theme={{
-              level4: '#39d353',
-              level3: '#26a641',
-              level2: '#006d32',
-              level1: '#0e4429',
               level0: '#262626',
             }}
-            transformData={(data) => {
-              let calendarContributions = 0;
-              data.forEach((day) => {
-                calendarContributions += day.count;
-              });
-              setTotalContributions2(calendarContributions);
-              return data;
-            }}
-            style={{}}
-            hideTotalCount={true}
-            hideColorLegend={true}
+            transformData={(data) => combinedCalendarData}
+            weekStart={1}
           />
-        </div>
+        )}
       </Box>
     </>
   );
