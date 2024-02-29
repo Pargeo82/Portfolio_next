@@ -28,6 +28,7 @@ const HobbiesPage = () => {
       >
         {hobbiesElements}
       </Grid>
+      y
     </>
   );
 };

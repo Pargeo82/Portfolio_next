@@ -4,10 +4,10 @@ import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography, alpha, 
 
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 type Props = {
-  image: string;
+  image: StaticImageData;
   name: string;
   title: string;
   description: string;
@@ -27,10 +27,11 @@ const ProjectCard = (props: Props) => {
     <CardActionArea>
       <CardMedia sx={{ height: { xs: '75%', lg: '80%' } }}>
         <Image
-          src={`/${props.image}`}
+          src={props.image}
           alt={props.title}
           width={830}
           height={467}
+          placeholder='blur'
           sizes='(min-width: 1280px) 558px, (min-width: 900px) calc(41.67vw + 33px), calc(97.24vw - 26px)'
           style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />

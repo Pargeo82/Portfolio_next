@@ -10,10 +10,16 @@ import '../src/styles/globals.css';
 import Layout from '../src/components/Layout/Layout';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Poppins } from 'next/font/google';
 
 export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
+
+const poppins = Poppins({
+  weight: ['200', '400', '700'],
+  subsets: ['latin'],
+});
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -60,7 +66,9 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-          <Component {...pageProps} />
+          <main className={poppins.className}>
+            <Component {...pageProps} />
+          </main>
           <Analytics />
           <SpeedInsights />
         </Layout>

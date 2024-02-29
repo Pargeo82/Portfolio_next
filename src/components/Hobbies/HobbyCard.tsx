@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Card, CardContent, CardMedia, Grid, Typography, alpha, useTheme } from '@mui/material';
 
 type HobbiesProps = {
   name: string;
   description: string;
-  image: string;
+  image: StaticImageData;
 };
 
 const HobbyCard = (props: HobbiesProps) => {
@@ -31,10 +31,11 @@ const HobbyCard = (props: HobbiesProps) => {
       >
         <CardMedia sx={{ height: { xs: '70%', lg: '75%' } }}>
           <Image
-            src={`/${props.image}`}
+            src={props.image}
             alt='{props.name}'
             width={560}
             height={450}
+            placeholder='blur'
             sizes='(min-width: 1280px) 558px, (min-width: 900px) calc(41.67vw + 33px), calc(97.24vw - 26px)'
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
           />

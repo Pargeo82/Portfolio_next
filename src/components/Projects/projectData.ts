@@ -1,10 +1,15 @@
 import { StaticImageData } from 'next/image';
 import { TechnoTypes } from '../../types/technoTypes';
 
+import maiImage from '@/public/projects/mai1.png';
+import cedeterijaImage from '@/public/projects/cedeterija1.png';
+import gtImage from '@/public/projects/gt1.png';
+import portfolioImage from '@/public/projects/portfolio1.png';
+
 export type Project = {
   id: number;
   name: string;
-  image: string;
+  image: StaticImageData;
   title: string;
   description: string;
   technology: TechnoTypes[];
@@ -21,7 +26,7 @@ const projectData = [
   {
     id: 1,
     name: 'Mai beauty salon',
-    image: 'projects/mai1.png',
+    image: maiImage,
     title: 'Beauty salon website',
     description: 'Local small business, just opened',
     technology: [TechnoTypes.TypeScript, TechnoTypes.NextJS, TechnoTypes.Figma, TechnoTypes.MaterialUI],
@@ -35,7 +40,7 @@ const projectData = [
   {
     id: 2,
     name: 'Cedeterija',
-    image: 'projects/cedeterija1.png',
+    image: cedeterijaImage,
     title: 'Discogs album fetcher',
     description: 'Data fetcher from discogs API, to input data into POS database',
     technology: [TechnoTypes.TypeScript, TechnoTypes.CSS, TechnoTypes.NextJS],
@@ -50,22 +55,22 @@ const projectData = [
   {
     id: 3,
     name: 'GT',
-    image: 'projects/gt1.png',
+    image: gtImage,
     title: 'Bar online menu',
     description: 'Mobile-first online menu for a bar',
     technology: [TechnoTypes.CSS, TechnoTypes.MongoDB, TechnoTypes.NextJS],
     link: 'gt',
     outsideLink: false,
     longerDescription:
-      "This is an online bar manu for a bar in Zaprešić. It has a dashboard where admins (me and the bar owner) have CRUD capabilites for articles, and the 'special offer' at the beginning of the page. It has been written in NextJS and database is MongoDB (Atlas). It is mobile-first site.",
+      "This is an online bar manu for a bar in Zaprešić. It has a dashboard where admins (me and the bar owner) have CRUD capabilities for articles, and the 'special offer' at the beginning of the page. It has been written in NextJS and database is MongoDB (Atlas). It is mobile-first site.",
     linkTitle: 'Caffe Bar GT',
     url: 'https://www.caffebargt-martinko.hr/',
   },
   {
     id: 4,
     name: 'Portfolio',
-    image: 'projects/portfolio1.png',
-    title: 'Portofolio site',
+    image: portfolioImage,
+    title: 'Portfolio site',
     description: 'Latest iteration done with TypeScript, MUI and NextJS',
     technology: [TechnoTypes.TypeScript, TechnoTypes.MaterialUI, TechnoTypes.NextJS],
     link: 'portfolio',

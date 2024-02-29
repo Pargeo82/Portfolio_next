@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true, // let it check the JS as well before runtime
     "skipLibCheck": true, // keep true, those are already precompiled and checked
     "strict": true, // will rerender and trigger effects 2 times to prevent leaks
@@ -19,21 +15,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
-    // "baseUrl": "src", // root/src is set as root for relative paths
-    // "rootDir": "./src"
-    ,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@/public/*": ["public/*"]
+    },
     "incremental": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ], // all source code should be in src
-  "exclude": [
-    "node_modules",
-    ".vscode",
-    "_public",
-    "_build"
-  ] // list of directories to avoid type checking
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"], // all source code should be in src
+  "exclude": ["node_modules", ".vscode", "_public", "_build"] // list of directories to avoid type checking
 }
