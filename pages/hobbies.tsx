@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material';
 import HobbyCard from '../src/components/Hobbies/HobbyCard';
 import hobbiesData from '../src/components/Hobbies/hobbies_data';
+import Head from 'next/head';
 
 const HobbiesPage = () => {
   const hobbiesElements = hobbiesData.map((hobby) => {
@@ -15,8 +16,11 @@ const HobbiesPage = () => {
   });
   return (
     <>
+      <Head>
+        <title>Hobbies | Pargeo portfolio</title>
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         Hobbies

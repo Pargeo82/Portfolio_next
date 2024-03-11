@@ -8,6 +8,7 @@ import gt2 from '../../public/projects/gt2.png';
 import gt3 from '../../public/projects/gt3.png';
 import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Head from 'next/head';
 
 export default function Gt() {
   const theme = useTheme();
@@ -18,8 +19,15 @@ export default function Gt() {
   }
   return (
     <>
+      <Head>
+        <title>Gt project | Pargeo portfolio</title>
+        <meta
+          name='description'
+          content='Local bar online menu project'
+        />
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         {project?.title}

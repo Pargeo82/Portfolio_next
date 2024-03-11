@@ -8,8 +8,14 @@ export default function BlogPage({ posts }) {
   return (
     <>
       <Head>
-        <title>My Blog</title>
+        <title>My Blog | Pargeo portfolio</title>
       </Head>
+      <Typography
+        variant='h1'
+        gutterBottom
+      >
+        Blog
+      </Typography>
       <Box
         mb={8}
         minHeight={'calc(100vh - 250px)'}

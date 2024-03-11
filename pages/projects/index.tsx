@@ -1,6 +1,7 @@
 import { Typography, Grid } from '@mui/material';
 import ProjectCard from '../../src/components/Projects/ProjectCard';
 import projectData from '../../src/components/Projects/projectData';
+import Head from 'next/head';
 
 export default function ProjectsPage() {
   const projectElements = projectData.map((project) => {
@@ -20,8 +21,11 @@ export default function ProjectsPage() {
   });
   return (
     <>
+      <Head>
+        <title>Projects | Pargeo portfolio</title>
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         Projects

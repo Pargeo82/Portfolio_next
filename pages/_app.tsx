@@ -40,7 +40,27 @@ export default function MyApp(props: MyAppProps) {
         <meta
           name='twitter:card'
           content='Portfolio page for a frontend developer & ux/ui designer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB etc.'
-        ></meta>
+        />
+        <meta
+          name='twitter:site'
+          content='@pargeo'
+        />
+        <meta
+          name='twitter:creator'
+          content='@pargeo'
+        />
+        <meta
+          property='og:url'
+          content='https://www.pargeo.com.hr/'
+        />
+        <meta
+          property='og:title'
+          content='Pargeo portfolio'
+        />
+        <meta
+          property='og:description'
+          content='Portfolio page for a frontend developer & ux/ui designer Mislav Markušić. Technologies used: HTML, CSS, JS, React, NextJS, MongoDB etc.'
+        />
         <link
           rel='apple-touch-icon'
           sizes='180x180'

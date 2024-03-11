@@ -9,6 +9,7 @@ import portfolio1 from '../../public/projects/portfolio1.png';
 import portfolio2 from '../../public/projects/portfolio2.png';
 import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Head from 'next/head';
 
 export default function Portfolio() {
   const theme = useTheme();
@@ -19,8 +20,15 @@ export default function Portfolio() {
   }
   return (
     <>
+      <Head>
+        <title>Portfolio project | Pargeo portfolio</title>
+        <meta
+          name='description'
+          content='Personal portfolio project'
+        />
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         {project?.title}

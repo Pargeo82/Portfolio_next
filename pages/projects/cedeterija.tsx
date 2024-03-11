@@ -9,6 +9,7 @@ import cedeterija1 from '../../public/projects/cedeterija2.png';
 import cedeterija2 from '../../public/projects/cedeterija3.png';
 import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Head from 'next/head';
 
 export default function Cedeterija() {
   const theme = useTheme();
@@ -19,8 +20,15 @@ export default function Cedeterija() {
   }
   return (
     <>
+      <Head>
+        <title>Cedeterija project | Pargeo portfolio</title>
+        <meta
+          name='description'
+          content='Album data fetcher from discogs'
+        />
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         {project?.title}

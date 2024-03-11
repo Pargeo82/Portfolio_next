@@ -9,6 +9,7 @@ import mai2 from '../../public/projects/mai2.png';
 import mai3 from '../../public/projects/mai3.png';
 import Link from 'next/link';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Head from 'next/head';
 
 export default function Mai() {
   const theme = useTheme();
@@ -19,8 +20,15 @@ export default function Mai() {
   }
   return (
     <>
+      <Head>
+        <title>Mai project | Pargeo portfolio</title>
+        <meta
+          name='description'
+          content='Beauty salon website'
+        />
+      </Head>
       <Typography
-        variant='h2'
+        variant='h1'
         gutterBottom
       >
         {project?.title}
