@@ -9,7 +9,7 @@ const nextConfig = {
 
   images: {
     deviceSizes: [320, 420, 768, 1024, 1280, 1600, 1920, 3840], // Added 3840px
-    imageSizes: [32, 48, 64, 96, 128, 256, 384],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 };
 
