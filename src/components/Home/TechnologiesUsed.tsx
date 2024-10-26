@@ -26,7 +26,7 @@ const TechnologiesUsed = () => {
             alt={technology}
             width={mobile ? 45 : 50}
             height={mobile ? 45 : 50}
-            sizes='(min-width: 1280px) 288px, (min-width: 900px) calc(20.83vw + 26px), (min-width: 600px) calc(50vw - 24px), calc(100vw - 32px)'
+            sizes='(min-width: 900px) 50px, 45px'
           />
           <Typography variant='h5'>{technology}</Typography>
         </Stack>

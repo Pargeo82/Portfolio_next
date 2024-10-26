@@ -29,6 +29,59 @@ export default function Work() {
               variant='h6'
               gutterBottom
             >
+              October 2024 -
+            </Typography>
+            <Typography
+              variant='h6'
+              fontWeight={700}
+            >
+              {' '}
+              Everything developer at{' '}
+              <Link
+                href='https://www.pargeo-design.hr/'
+                target='_blank'
+                title='Pargeo Design'
+                sx={{ color: primaryText, textDecorationColor: primaryText }}
+              >
+                Pargeo Design
+              </Link>
+            </Typography>
+            <List sx={{ listStyle: 'disc', pl: 4 }}>
+              <ListItem sx={{ display: 'list-item' }}>Small business web agency</ListItem>
+              <ListItem sx={{ display: 'list-item' }}>Designing and coding websites</ListItem>
+              <ListItem sx={{ display: 'list-item' }}>Digital marketing & SEO</ListItem>
+            </List>
+          </Box>
+          <Link
+            href='https://www.pargeo-design.hr/'
+            target='_blank'
+            title='Pargeo Design'
+          >
+            <Image
+              src='/Logo_PD.png'
+              alt='Pargeo Design logo'
+              width={560}
+              height={385}
+              sizes='(min-width: 900px) 187px, calc(97.24vw - 24px)'
+              style={{ width: '100%', height: 'auto' }}
+            />
+          </Link>
+        </Stack>
+      </Stack>
+      <Stack
+        direction={'column'}
+        sx={{ mt: 4 }}
+      >
+        <Stack
+          direction={{ xs: 'column', md: 'row' }}
+          width={'100%'}
+          mb={4}
+        >
+          <Box width={{ xs: '100%', md: '60%' }}>
+            <Typography
+              variant='h6'
+              gutterBottom
+            >
               November 2022 -
             </Typography>
             <Typography
@@ -40,7 +93,6 @@ export default function Work() {
               <Link
                 href='https://atmc.ai/'
                 target='_blank'
-                rel='noreferrer'
                 title='Atomic Intelligence'
                 sx={{ color: primaryText, textDecorationColor: primaryText }}
               >
@@ -57,7 +109,6 @@ export default function Work() {
           <Link
             href='https://atmc.ai/'
             target='_blank'
-            rel='noreferrer'
             title='Atomic Intelligence'
           >
             <Image
@@ -83,7 +134,48 @@ export default function Work() {
               variant='elevation'
               elevation={2}
             >
-              <CardMedia>
+              <CardMedia
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  height: 220,
+                }}
+              >
+                <Image
+                  src='/Stem.png'
+                  alt='Stem&Jam logo'
+                  width={740}
+                  height={266}
+                  sizes='429px'
+                  style={{ width: 'auto', height: '200px' }}
+                />
+              </CardMedia>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
+                <List
+                  dense
+                  sx={{ listStyle: 'disc', pl: 4 }}
+                >
+                  <ListItem sx={{ display: 'list-item' }}>B2C application</ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>Musical app for stem separation</ListItem>
+                </List>
+                <Box sx={{ marginTop: 'auto' }}>
+                  <ProjectTechnologies
+                    technologies={[TechnoTypes.React, TechnoTypes.Sass, TechnoTypes.Redux, TechnoTypes.TypeScript]}
+                  />
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+          >
+            <Card
+              variant='elevation'
+              elevation={2}
+            >
+              <CardMedia sx={{ height: 220 }}>
                 <Image
                   src='/PandaLogo.png'
                   alt='AI Panda logo'
@@ -114,6 +206,7 @@ export default function Work() {
               </CardContent>
             </Card>
           </Grid>
+
           <Grid
             item
             xs={12}
@@ -123,7 +216,7 @@ export default function Work() {
               variant='elevation'
               elevation={4}
             >
-              <CardMedia>
+              <CardMedia sx={{ height: 220 }}>
                 <Image
                   src='/hawk.png'
                   alt='Hawk-a-doc logo'

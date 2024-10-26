@@ -2,7 +2,6 @@ import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import { MailOutline, Download } from '@mui/icons-material';
 import Image from 'next/image';
 import Router from 'next/router';
-import TypewriterEff from './Typewriter';
 import { useTheme } from '@mui/material/styles';
 import PargeoPhoto from '../../../public/Pargeo2.png';
 import Link from 'next/link';
@@ -52,7 +51,6 @@ const Hero = () => {
               Pargeo
             </Typography>
           </Typography>
-          <TypewriterEff />
         </Stack>
         <Stack
           direction='row'
@@ -108,13 +106,14 @@ const Hero = () => {
         <Typography
           variant='body1'
           mt={8}
-          width={{ xs: '100%', md: '80%' }}
           align='justify'
+          sx={{ fontSize: '1.25em !important' }}
         >
-          I am a junior frontend developer with a passion for web development and design. I have been working as a react
-          developer for the past year and a half, and have finished a course in UX/UI design at Algebra in the meantime,
-          with having a special interest in designing in Figma. I am always looking for new challenges and opportunities
-          to grow and learn new things.
+          I am a <span style={{ color: theme.palette.primary.main }}>frontend developer</span>
+          .<br />I am a <span style={{ color: theme.palette.primary.main }}>UX/UI designer</span>
+          .<br />I am a <span style={{ color: theme.palette.primary.main }}>digital marketer</span>
+          .<br />I am an <span style={{ color: theme.palette.primary.main }}>SEO enthusiast</span>
+          .<br />I am an <span style={{ color: theme.palette.primary.main }}>entrepreneur</span>.
         </Typography>
       </Grid>
       <Grid

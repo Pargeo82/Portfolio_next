@@ -5,6 +5,7 @@ import maiImage from '@/public/projects/mai1.png';
 import cedeterijaImage from '@/public/projects/cedeterija1.png';
 import gtImage from '@/public/projects/gt1.png';
 import portfolioImage from '@/public/projects/portfolio1.png';
+import PdImage from '@/public/projects/Pd1.png';
 
 export type Project = {
   id: number;
@@ -25,6 +26,20 @@ export type Project = {
 const projectData = [
   {
     id: 1,
+    name: 'Pargeo Design',
+    image: PdImage,
+    title: 'My web agency site',
+    description: 'I have decided to start a small business',
+    technology: [TechnoTypes.TypeScript, TechnoTypes.NextJS, TechnoTypes.Figma, TechnoTypes.MaterialUI],
+    link: 'Pd',
+    outsideLink: false,
+    longerDescription:
+      'I have decided to become an entrepreneur and start a small business. I have made a website for it, fully designed in figma, then made in NextJS 14 (new image component and router). It has been made with TypeScript, and MaterialUI. It is fully responsive and has been tested on multiple devices and browsers. It has been made with SEO in mind, and added Schema.org entries. Also the added blog is done with MDX. It has web forms set, validation in zod, with mailjet integration, and review redirect to google company profile (former google my business).',
+    linkTitle: 'Pargeo Design',
+    url: 'https://www.pargeo-design.hr/',
+  },
+  {
+    id: 2,
     name: 'Mai beauty salon',
     image: maiImage,
     title: 'Beauty salon website',
@@ -38,7 +53,7 @@ const projectData = [
     url: 'https://www.ks-mai.hr/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Cedeterija',
     image: cedeterijaImage,
     title: 'Discogs album fetcher',
@@ -53,7 +68,7 @@ const projectData = [
     gitUrl: 'https://github.com/Pargeo82/cedeterija',
   },
   {
-    id: 3,
+    id: 4,
     name: 'GT',
     image: gtImage,
     title: 'Bar online menu',
@@ -67,7 +82,7 @@ const projectData = [
     url: 'https://www.caffebargt-martinko.hr/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Portfolio',
     image: portfolioImage,
     title: 'Portfolio site',
