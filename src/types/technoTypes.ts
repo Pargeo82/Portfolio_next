@@ -11,4 +11,6 @@ export enum TechnoTypes {
   Redux = 'Redux',
   Figma = 'Figma',
   MaterialUI = 'MaterialUI',
+  Mantine = 'Mantine',
+  Vue = 'Vue',
 }

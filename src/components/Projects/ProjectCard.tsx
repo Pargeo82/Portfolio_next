@@ -29,8 +29,8 @@ const ProjectCard = (props: Props) => {
         <Image
           src={props.image}
           alt={props.title}
-          width={830}
-          height={467}
+          width={800}
+          height={454}
           placeholder='blur'
           sizes='(min-width: 1280px) 558px, (min-width: 900px) calc(41.67vw + 33px), calc(97.24vw - 26px)'
           style={{ objectFit: 'cover', width: '100%', height: '100%' }}

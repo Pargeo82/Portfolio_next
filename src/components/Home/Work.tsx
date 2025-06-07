@@ -1,13 +1,10 @@
-import { Box, Card, Grid, Stack, Typography, Link, List, ListItem, CardMedia, CardContent } from '@mui/material';
+import { Box, Card, Grid, Stack, Typography, List, ListItem, CardMedia, CardContent } from '@mui/material';
 import Image from 'next/image';
-import { useTheme } from '@mui/material';
+import Link from 'next/link';
 import ProjectTechnologies from '../technologies/ProjectTechnologies';
 import { TechnoTypes } from '../../types/technoTypes';
 
 export default function Work() {
-  const theme = useTheme();
-  const primaryText = theme.palette.text.primary;
-
   return (
     <Box mb={10}>
       <Typography
@@ -36,12 +33,11 @@ export default function Work() {
               fontWeight={700}
             >
               {' '}
-              Everything developer at{' '}
+              Everything at{' '}
               <Link
                 href='https://www.pargeo-design.hr/'
                 target='_blank'
                 title='Pargeo Design'
-                sx={{ color: primaryText, textDecorationColor: primaryText }}
               >
                 Pargeo Design
               </Link>
@@ -94,7 +90,6 @@ export default function Work() {
                 href='https://atmc.ai/'
                 target='_blank'
                 title='Atomic Intelligence'
-                sx={{ color: primaryText, textDecorationColor: primaryText }}
               >
                 Atomic Intelligence
               </Link>
@@ -141,14 +136,20 @@ export default function Work() {
                   height: 220,
                 }}
               >
-                <Image
-                  src='/Stem.png'
-                  alt='Stem&Jam logo'
-                  width={740}
-                  height={266}
-                  sizes='429px'
-                  style={{ width: 'auto', height: '200px' }}
-                />
+                <Link
+                  href='https://www.stemjam.music/'
+                  target='_blank'
+                  title='Stem&Jam'
+                >
+                  <Image
+                    src='/Stem.png'
+                    alt='Stem&Jam logo'
+                    width={740}
+                    height={266}
+                    sizes='429px'
+                    style={{ width: 'auto', height: '200px' }}
+                  />
+                </Link>
               </CardMedia>
               <CardContent sx={{ display: 'flex', flexDirection: 'column', minHeight: 300 }}>
                 <List
@@ -160,7 +161,7 @@ export default function Work() {
                 </List>
                 <Box sx={{ marginTop: 'auto' }}>
                   <ProjectTechnologies
-                    technologies={[TechnoTypes.React, TechnoTypes.Sass, TechnoTypes.Redux, TechnoTypes.TypeScript]}
+                    technologies={[TechnoTypes.React, TechnoTypes.TypeScript, TechnoTypes.Mantine, TechnoTypes.Figma]}
                   />
                 </Box>
               </CardContent>

@@ -6,6 +6,8 @@ import cedeterijaImage from '@/public/projects/cedeterija1.png';
 import gtImage from '@/public/projects/gt1.png';
 import portfolioImage from '@/public/projects/portfolio1.png';
 import PdImage from '@/public/projects/Pd1.png';
+import marolijaImage from '@/public/projects/marolija1.png';
+import harmonieImage from '@/public/projects/harmonie1.png';
 
 export type Project = {
   id: number;
@@ -40,6 +42,32 @@ const projectData = [
   },
   {
     id: 2,
+    name: 'Marolija',
+    image: marolijaImage,
+    title: 'Marolija',
+    description: "Virtual assistant's website",
+    technology: [TechnoTypes.TypeScript, TechnoTypes.NextJS, TechnoTypes.Figma, TechnoTypes.MaterialUI],
+    link: 'marolija',
+    outsideLink: false,
+    longerDescription: "Virtual assistant's website",
+    linkTitle: 'Marolija',
+    url: 'https://www.marolija.hr/',
+  },
+  {
+    id: 3,
+    name: 'Harmonie',
+    image: harmonieImage,
+    title: 'Harmonie',
+    description: 'Local beauty salon website',
+    technology: [TechnoTypes.TypeScript, TechnoTypes.NextJS, TechnoTypes.Figma, TechnoTypes.MaterialUI],
+    link: 'harmonie',
+    outsideLink: false,
+    longerDescription: 'Local beauty salon website',
+    linkTitle: 'Harmonie',
+    url: 'https://www.ks-harmonie.hr/',
+  },
+  {
+    id: 3,
     name: 'Mai beauty salon',
     image: maiImage,
     title: 'Beauty salon website',
@@ -53,7 +81,7 @@ const projectData = [
     url: 'https://www.ks-mai.hr/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Cedeterija',
     image: cedeterijaImage,
     title: 'Discogs album fetcher',
@@ -68,7 +96,7 @@ const projectData = [
     gitUrl: 'https://github.com/Pargeo82/cedeterija',
   },
   {
-    id: 4,
+    id: 6,
     name: 'GT',
     image: gtImage,
     title: 'Bar online menu',
@@ -82,7 +110,7 @@ const projectData = [
     url: 'https://www.caffebargt-martinko.hr/',
   },
   {
-    id: 5,
+    id: 7,
     name: 'Portfolio',
     image: portfolioImage,
     title: 'Portfolio site',
