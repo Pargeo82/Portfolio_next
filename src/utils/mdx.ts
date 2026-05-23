@@ -9,11 +9,9 @@ const articlesPath = path.join(process.cwd(), 'src/data/articles');
 export const getSlug = async () => {
   const paths = sync(`${articlesPath}/*.mdx`);
 
-  return paths.map((path) => {
-    // holds the paths to the directory of the article
-    const pathContent = path.split('/');
-    const fileName = pathContent[pathContent.length - 1];
-    const [slug, _extension] = fileName.split('.');
+  return paths.map((filePath) => {
+    const fileName = path.basename(filePath);
+    const [slug] = fileName.split('.');
 
     return slug;
   });

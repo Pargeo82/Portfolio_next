@@ -23,7 +23,7 @@ npm start       # production server
 - **react-github-calendar** — GitHub contributions widget
 - **typewriter-effect** — typewriter animation on homepage
 - **next-sitemap** — sitemap generation on build
-- **npm** — package manager (not pnpm or yarn)
+- **pnpm** — package manager (not npm or yarn)
 
 ## Architecture
 
