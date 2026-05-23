@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
@@ -92,6 +93,11 @@ export default function MyApp(props: MyAppProps) {
           <Analytics />
           <SpeedInsights />
         </Layout>
+        <Script
+          defer
+          src='https://analytics.pargeo-design.hr/script.js'
+          data-website-id='aa7c09ad-f4b8-462e-b85d-bd2fd835e16e'
+        />
       </ThemeProvider>
     </CacheProvider>
   );
